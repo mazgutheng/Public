@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @humanzone8
+ Sign out
+ Watch 0
+  Star 0  Fork 0 humanzone8/Chucky
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Branch: master Find file Copy pathChucky/Chuckysb.py
+5002f23  3 minutes ago
+@humanzone8 humanzone8 Update Chuckysb.py
+2 contributors @Nadyatjia @humanzone8
+RawBlameHistory     
+3199 lines (2792 sloc)  132 KB
 # -*- coding: utf-8 -*-
 #Chucky_Bot
 
@@ -129,7 +147,6 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
@@ -1144,8 +1161,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
-		else:
-		    nadya.sendText(msg.to, "Khusus Nadya")
+		    nadya.sendText(msg.to, "Khusus Admin")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
@@ -1168,8 +1184,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
-		else:
-		    nadya.sendText(msg.to, "Khusus Nadya")
+		    nadya.sendText(msg.to, "Khusus Admin")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
@@ -1183,8 +1198,7 @@ def bot(op):
 			        nadya.sendText(msg.to,"Success Join To ["+ h +"] Group")
 			    else:
 			        pass
-		    else:
-		        nadya.sendText(msg.to,"Khusus Nadya")
+					
 		except Exception as e:
 		    nadya.sendText(msg.to, str(e))
  
@@ -1200,8 +1214,6 @@ def bot(op):
 			    nadya.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
  
 	    elif "Leave all group" == msg.text:
 		gid = nadya.getGroupIdsJoined()
@@ -1210,8 +1222,6 @@ def bot(op):
 			nadya.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
 		        nadya.leaveGroup(i)
 		    nadya.sendText(msg.to,"Success Leave All Group")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 		   
 
             elif "Pict group: " in msg.text:
@@ -1259,15 +1269,11 @@ def bot(op):
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
                     nadya.sendText(msg.to,"Auto Join Sudah Aktif")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
                     nadya.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
@@ -1275,15 +1281,11 @@ def bot(op):
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
                     nadya.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
-                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")		    
+                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")		    
 		    
  
             elif msg.text in ["Respon on"]:
@@ -1291,15 +1293,11 @@ def bot(op):
                     wait["detectMention"] = True
                     wait["kickMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Sudah Aktif")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Respon off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Sudah Off")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	
 		    
 		    
  
@@ -1308,93 +1306,69 @@ def bot(op):
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")			  
+                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")		  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = True
                 nadya.sendText(msg.to,"Auto Cancel Sudah Aktif")
-		print wait["AutoCancel"]
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")		
+		print wait["AutoCancel"]	
 
 	    elif msg.text in ["Autocancel off"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = False
                 nadya.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
-		print wait["AutoCancel"]
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	
+		print wait["AutoCancel"]	
 		    
 
 	    elif msg.text in ["Invitepro on"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 nadya.sendText(msg.to,"Invite Protect Sudah Aktif")
-		print wait["inviteprotect"]
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")		
+		print wait["inviteprotect"]	
 
 	    elif msg.text in ["Invitepro off"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 nadya.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
-		print wait["inviteprotect"]
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")		    
+		print wait["inviteprotect"]	    
 
 	    elif "Qr on" in msg.text:
 	     if msg.from_ in admin:	        
 	        wait["Qr"] = True
-	    	nadya.sendText(msg.to,"QR Protect Sudah Aktif")
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	    	
+	    	nadya.sendText(msg.to,"QR Protect Sudah Aktif")	    	
 
 	    elif "Qr off" in msg.text:
 	     if msg.from_ in admin:	        
 	    	wait["Qr"] = False
-	    	nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
-	     else:
-		    nadya.sendText(msg.to,"Khusus Nadya")	    	
+	    	nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")    	
 
                         
 
 	    elif "Autokick on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = True
-		     nadya.sendText(msg.to,"Auto Kick Sudah Aktif")
-	     else:
-	        nadya.sendText(msg.to,"Khusus Nadya")	     
+		     nadya.sendText(msg.to,"Auto Kick Sudah Aktif")	     
 
 	    elif "Autokick off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = False
-		     nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
-	     else:
-	        nadya.sendText(msg.to,"Khusus Nadya")	     
+		     nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")     
 
 	    elif "Ghost on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = True
-		     nadya.sendText(msg.to,"Ghost Sudah Aktif")
-	     else:
-	        nadya.sendText(msg.to,"Khusus Nadya")		     
+		     nadya.sendText(msg.to,"Ghost Sudah Aktif")		     
 
 	    elif "Ghost off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = False
-		     nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
-	     else:
-	         nadya.sendText(msg.to,"Khusus Nadya")		     
+		     nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")	     
 
             elif msg.text in ["Allprotect on"]:
 		if msg.from_ in admin:
@@ -1404,8 +1378,6 @@ def bot(op):
                     wait["Qr"] = True
                     wait["Ghost"] = True                     
                     nadya.sendText(msg.to,"All Protect Sudah Aktif Semua")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1415,8 +1387,6 @@ def bot(op):
                     wait["Qr"] = False
                     wait["Ghost"] = False                    
                     nadya.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
 
             elif msg.text in ["K on","Contact on"]:
@@ -3196,3 +3166,15 @@ while True:
             nadya.Poll.rev = max(nadya.Poll.rev, Op.revision)
             bot(Op)
 
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
