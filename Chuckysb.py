@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @humanzone8
- Sign out
- Watch 0
-  Star 0  Fork 0 humanzone8/Chucky
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-Branch: master Find file Copy pathChucky/Chuckysb.py
-5002f23  3 minutes ago
-@humanzone8 humanzone8 Update Chuckysb.py
-2 contributors @Nadyatjia @humanzone8
-RawBlameHistory     
-3199 lines (2792 sloc)  132 KB
 # -*- coding: utf-8 -*-
 #Chucky_Bot
 
@@ -1161,7 +1143,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
-		    nadya.sendText(msg.to, "Khusus Admin")
+		    nadya.sendText(msg.to, "Khusus Nadya")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
@@ -1184,7 +1166,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
-		    nadya.sendText(msg.to, "Khusus Admin")
+		    nadya.sendText(msg.to, "Khusus Nadya")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
@@ -3165,16 +3147,3 @@ while True:
         if (Op.type != OpType.END_OF_OPERATION):
             nadya.Poll.rev = max(nadya.Poll.rev, Op.revision)
             bot(Op)
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
