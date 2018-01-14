@@ -46,6 +46,8 @@ selfMessage ="""
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 botMessage ="""
@@ -61,6 +63,8 @@ botMessage ="""
 ╠➩〘Myname (Text)〙
 ╠➩〘@bye〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 mediaMessage ="""
@@ -99,6 +103,8 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 groupMessage ="""
@@ -129,6 +135,8 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
@@ -143,6 +151,8 @@ setMessage ="""
 ╠➩〘Contact on/off〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 creatorMessage ="""
@@ -161,6 +171,8 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 adminMessage ="""
@@ -199,6 +211,8 @@ adminMessage ="""
 ╠➩〘Respon on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 helpMessage ="""
@@ -219,6 +233,8 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 
@@ -254,7 +270,7 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
+    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -905,9 +921,9 @@ def bot(op):
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
-                admin1 = "u98de185cb21076c0555b269589fb5a10"
-                admin2 = "ucad303333969352466bfecd62089a1b4"
-                admin3 = "ucad303333969352466bfecd62089a1b4"
+                admin1 = "u23ad5ddec0dd0523f9caffad673d693c"
+                admin2 = "u8b2bb5214c1afc77d06901a535c23e30"
+                admin3 = "u57a54b914085fea6f04c19f6fe589057"
                 msg.contentMetadata = {'mid': tjia}
                 nadya.sendMessage(msg)
                 msg.contentMetadata = {'mid': admin1}
@@ -1143,6 +1159,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success Ban Group : "+grp)
 			else:
 			    pass
+		else:
 		    nadya.sendText(msg.to, "Khusus Nadya")
  
             elif msg.text in ["List ban","List ban group"]:
@@ -1166,6 +1183,7 @@ def bot(op):
 			    nadya.sendText(msg.to, "Success del ban "+ng)
 		        else:
 			    pass
+		else:
 		    nadya.sendText(msg.to, "Khusus Nadya")
  
             elif "Join group: " in msg.text:
@@ -1180,7 +1198,8 @@ def bot(op):
 			        nadya.sendText(msg.to,"Success Join To ["+ h +"] Group")
 			    else:
 			        pass
-					
+		    else:
+		        nadya.sendText(msg.to,"Khusus Nadya")
 		except Exception as e:
 		    nadya.sendText(msg.to, str(e))
  
@@ -1196,6 +1215,8 @@ def bot(op):
 			    nadya.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
  
 	    elif "Leave all group" == msg.text:
 		gid = nadya.getGroupIdsJoined()
@@ -1204,6 +1225,8 @@ def bot(op):
 			nadya.sendText(i,"Bot Di Paksa Keluar Oleh Owner!")
 		        nadya.leaveGroup(i)
 		    nadya.sendText(msg.to,"Success Leave All Group")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 		   
 
             elif "Pict group: " in msg.text:
@@ -1251,11 +1274,15 @@ def bot(op):
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
                     nadya.sendText(msg.to,"Auto Join Sudah Aktif")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
                     nadya.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
@@ -1263,11 +1290,15 @@ def bot(op):
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
                     nadya.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
-                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")		    
+                    nadya.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")		    
 		    
  
             elif msg.text in ["Respon on"]:
@@ -1275,11 +1306,15 @@ def bot(op):
                     wait["detectMention"] = True
                     wait["kickMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Sudah Aktif")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Respon off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Sudah Off")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")	
 		    
 		    
  
@@ -1288,69 +1323,93 @@ def bot(op):
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
                     nadya.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")		  
+                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = True
                 nadya.sendText(msg.to,"Auto Cancel Sudah Aktif")
-		print wait["AutoCancel"]	
+		print wait["AutoCancel"]
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")		
 
 	    elif msg.text in ["Autocancel off"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = False
                 nadya.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
-		print wait["AutoCancel"]	
+		print wait["AutoCancel"]
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")	
 		    
 
 	    elif msg.text in ["Invitepro on"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 nadya.sendText(msg.to,"Invite Protect Sudah Aktif")
-		print wait["inviteprotect"]	
+		print wait["inviteprotect"]
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")		
 
 	    elif msg.text in ["Invitepro off"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 nadya.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
-		print wait["inviteprotect"]	    
+		print wait["inviteprotect"]
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")		    
 
 	    elif "Qr on" in msg.text:
 	     if msg.from_ in admin:	        
 	        wait["Qr"] = True
-	    	nadya.sendText(msg.to,"QR Protect Sudah Aktif")	    	
+	    	nadya.sendText(msg.to,"QR Protect Sudah Aktif")
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")	    	
 
 	    elif "Qr off" in msg.text:
 	     if msg.from_ in admin:	        
 	    	wait["Qr"] = False
-	    	nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")    	
+	    	nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
+	     else:
+		    nadya.sendText(msg.to,"Khusus Nadya")	    	
 
                         
 
 	    elif "Autokick on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = True
-		     nadya.sendText(msg.to,"Auto Kick Sudah Aktif")	     
+		     nadya.sendText(msg.to,"Auto Kick Sudah Aktif")
+	     else:
+	        nadya.sendText(msg.to,"Khusus Nadya")	     
 
 	    elif "Autokick off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = False
-		     nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")     
+		     nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
+	     else:
+	        nadya.sendText(msg.to,"Khusus Nadya")	     
 
 	    elif "Ghost on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = True
-		     nadya.sendText(msg.to,"Ghost Sudah Aktif")		     
+		     nadya.sendText(msg.to,"Ghost Sudah Aktif")
+	     else:
+	        nadya.sendText(msg.to,"Khusus Nadya")		     
 
 	    elif "Ghost off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = False
-		     nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")	     
+		     nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
+	     else:
+	         nadya.sendText(msg.to,"Khusus Nadya")		     
 
             elif msg.text in ["Allprotect on"]:
 		if msg.from_ in admin:
@@ -1360,6 +1419,8 @@ def bot(op):
                     wait["Qr"] = True
                     wait["Ghost"] = True                     
                     nadya.sendText(msg.to,"All Protect Sudah Aktif Semua")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1369,6 +1430,8 @@ def bot(op):
                     wait["Qr"] = False
                     wait["Ghost"] = False                    
                     nadya.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
+		else:
+		    nadya.sendText(msg.to,"Khusus Nadya")
 
 
             elif msg.text in ["K on","Contact on"]:
@@ -2083,7 +2146,7 @@ def bot(op):
                 nadya.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "ucad303333969352466bfecd62089a1b4"
+                midd = "u14f64e139a3817afaabe27d237afb36b"
                 nadya.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
@@ -3147,3 +3210,4 @@ while True:
         if (Op.type != OpType.END_OF_OPERATION):
             nadya.Poll.rev = max(nadya.Poll.rev, Op.revision)
             bot(Op)
+
