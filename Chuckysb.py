@@ -46,8 +46,6 @@ selfMessage ="""
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 botMessage ="""
@@ -63,8 +61,6 @@ botMessage ="""
 ╠➩〘Myname (Text)〙
 ╠➩〘@bye〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 mediaMessage ="""
@@ -103,8 +99,6 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 groupMessage ="""
@@ -135,8 +129,7 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
+
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
@@ -151,8 +144,6 @@ setMessage ="""
 ╠➩〘Contact on/off〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 creatorMessage ="""
@@ -171,8 +162,6 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 adminMessage ="""
@@ -211,8 +200,6 @@ adminMessage ="""
 ╠➩〘Respon on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 helpMessage ="""
@@ -233,8 +220,6 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 
