@@ -46,8 +46,7 @@ selfMessage ="""
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -64,8 +63,7 @@ botMessage ="""
 ╠➩〘Myname (Text)〙
 ╠➩〘@bye〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -105,8 +103,7 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -138,11 +135,10 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
-tjia="u14f64e139a3817afaabe27d237afb36b"
+tjia="ucad303333969352466bfecd62089a1b4"
 
 setMessage ="""
 ╔═════════════════════════
@@ -155,8 +151,7 @@ setMessage ="""
 ╠➩〘Contact on/off〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -176,8 +171,7 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -217,8 +211,7 @@ adminMessage ="""
 ╠➩〘Respon on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -240,8 +233,7 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
+║             ZeяøTeαмBøт
 ╚═════════════════════════
 """
 
@@ -249,8 +241,8 @@ helpMessage ="""
 KAC=[nadya]
 mid = nadya.getProfile().mid
 Bots=[mid]
-Creator=["u14f64e139a3817afaabe27d237afb36b"]
-admin=["u14f64e139a3817afaabe27d237afb36b","u23ad5ddec0dd0523f9caffad673d693c","u8b2bb5214c1afc77d06901a535c23e30","u57a54b914085fea6f04c19f6fe589057","u94fb89525397a12a24df3642a7335fe7"]
+Creator=["ucad303333969352466bfecd62089a1b4"]
+admin=["ucad303333969352466bfecd62089a1b4"]
 
 contact = nadya.getProfile()
 backup1 = nadya.getProfile()
@@ -278,7 +270,7 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
+    "comment":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
