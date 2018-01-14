@@ -20,7 +20,8 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-selfMessage ="""
+selfMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║            ☆☞ S E L F ☜☆
 ╠═════════════════════════
@@ -48,7 +49,8 @@ selfMessage ="""
 ╠═════════════════════════
 """
 
-botMessage ="""
+botMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║             ☆☞ B O T ☜☆
 ╠═════════════════════════
@@ -63,7 +65,8 @@ botMessage ="""
 ╠═════════════════════════
 """
 
-mediaMessage ="""
+mediaMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║           ☆☞ M E D I A ☜☆
 ╠═════════════════════════
@@ -101,7 +104,8 @@ mediaMessage ="""
 ╠═════════════════════════
 """
 
-groupMessage ="""
+groupMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║           ☆☞ G R O U P ☜☆
 ╠═════════════════════════
@@ -133,7 +137,8 @@ groupMessage ="""
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
-setMessage ="""
+setMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║              ☆☞ S E T ☜☆
 ╠═════════════════════════
@@ -146,7 +151,8 @@ setMessage ="""
 ╠═════════════════════════
 """
 
-creatorMessage ="""
+creatorMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║         ☆☞ C R E A T O R ☜☆
 ╠═════════════════════════
@@ -164,7 +170,8 @@ creatorMessage ="""
 ╠═════════════════════════
 """
 
-adminMessage ="""
+adminMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║            ☆☞ A D M I N ☜☆
 ╠═════════════════════════
@@ -202,7 +209,8 @@ adminMessage ="""
 ╠═════════════════════════
 """
 
-helpMessage ="""
+helpMessage ="ucad303333969352466bfecd62089a1b4"
+"""
 ╔═════════════════════════
 ║              ☆☞ H E L P ☜☆
 ╠═════════════════════════
@@ -2131,7 +2139,7 @@ def bot(op):
                 nadya.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "u14f64e139a3817afaabe27d237afb36b"
+                midd = "ucad303333969352466bfecd62089a1b4"
                 nadya.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
