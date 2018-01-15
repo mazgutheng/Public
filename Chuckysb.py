@@ -1379,8 +1379,6 @@ def bot(op):
                     wait["Qr"] = True
                     wait["Ghost"] = True                     
                     nadya.sendText(msg.to,"All Protect Sudah Aktif Semua")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1390,8 +1388,6 @@ def bot(op):
                     wait["Qr"] = False
                     wait["Ghost"] = False                    
                     nadya.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
-		else:
-		    nadya.sendText(msg.to,"Khusus Nadya")
 
 
             elif msg.text in ["K on","Contact on"]:
