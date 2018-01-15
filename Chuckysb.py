@@ -256,7 +256,7 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~nad_nad.",    
+    "comment":"Bot Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -907,9 +907,9 @@ def bot(op):
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
-                admin1 = "u23ad5ddec0dd0523f9caffad673d693c"
-                admin2 = "u8b2bb5214c1afc77d06901a535c23e30"
-                admin3 = "u57a54b914085fea6f04c19f6fe589057"
+                admin1 = "ucad303333969352466bfecd62089a1b4"
+                admin2 = "ucad303333969352466bfecd62089a1b4"
+                admin3 = "ucad303333969352466bfecd62089a1b4"
                 msg.contentMetadata = {'mid': tjia}
                 nadya.sendMessage(msg)
                 msg.contentMetadata = {'mid': admin1}
