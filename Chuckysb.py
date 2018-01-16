@@ -2118,10 +2118,8 @@ def bot(op):
 		gid = nadya.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			nadya.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~nad_nad.")
+			nadya.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~gkada.line")
 		    nadya.sendText(msg.to,"Success BC BosQ")
-		else:
-		    nadya.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Cancel"]:
                 gid = nadya.getGroupIdsInvited()
