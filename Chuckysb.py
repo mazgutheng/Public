@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #Chucky_Bot
 
-import LINETCR
+import LINETCRnjer
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -2376,7 +2376,7 @@ def bot(op):
 						abc = song[3].replace('https://','http://')
 						nadya.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
 						nadya.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						nadya.sendAudioWithURL(msg.to,abc)
+						nadya.sendAudioWithURL(msg.to, song[4])
 						nadya.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
 	
             elif '/lirik ' in msg.text.lower():
@@ -2504,7 +2504,7 @@ def bot(op):
                                 nadya.sendText(msg.to,"Upload image failed.")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
-                                link = ["http://dl.profile.line-cdn.net/0hNPsZWL9WEX9OIz0lhyFuKHJmHxI5DRc3NkJaETwkRklqGwQoJkNbTGklHRo2G1B7cxFXH2NxSU03"]
+                                link = ["http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=ucad303333969352466bfecd62089a1b4&oid=3df4d6a6519a87e8059b37c23c1adc63"]
                                 pilih = random.choice(link)
                                 nadya.sendImageWithURL(msg.to,pilih)
 
