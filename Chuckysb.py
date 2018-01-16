@@ -205,13 +205,13 @@ helpMessage ="""
 ╔═════════════════════════
 ║              ☆☞ H E L P ☜☆
 ╠═════════════════════════
-╠➩〘Help 1〙
-╠➩〘Help 2〙
-╠➩〘Help 3〙
-╠➩〘Help 4〙
-╠➩〘Help 5〙
-╠➩〘Help 6〙
-╠➩〘Help 7〙
+╠➩〘Help Creator〙
+╠➩〘Help Group〙
+╠➩〘Help Self〙
+╠➩〘Help Bot〙
+╠➩〘Help Set〙
+╠➩〘Help Media〙
+╠➩〘Help Admin〙
 ╠➩〘Owner〙
 ╠➩〘Pap owner〙
 ╠➩〘Admin〙
@@ -1096,28 +1096,28 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["Key 1","help 1","Help 1"]:
+            elif msg.text in ["Help creator","help creator","Help Creator"]:
                 nadya.sendText(msg.to,creatorMessage)
 
-            elif msg.text in ["Key 2","help 2","Help 2"]:
+            elif msg.text in ["Help group","help group","Help Group"]:
                 nadya.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
                 nadya.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Key 3","help 3","Help 3"]:
+            elif msg.text in ["Help self","help self","Help Self"]:
                 nadya.sendText(msg.to,selfMessage)
 
-            elif msg.text in ["Key 4","help 4","Help 4"]:
+            elif msg.text in ["Help bot","help bot","Help Bot"]:
                 nadya.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Key 5","help 5","Help 5"]:
+            elif msg.text in ["Help set","help set","Help Set"]:
                 nadya.sendText(msg.to,setMessage)
 
-            elif msg.text in ["Key 6","help 6","Help 6"]:
+            elif msg.text in ["Help media","help media","Help Media"]:
                 nadya.sendText(msg.to,mediaMessage)
                 
-            elif msg.text in ["Key 7","help 7","Help 7"]:
+            elif msg.text in ["Help admin","help admin","Help Admin"]:
                 nadya.sendText(msg.to,adminMessage)                
                 
 
