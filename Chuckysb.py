@@ -99,8 +99,6 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 groupMessage ="""
@@ -224,7 +222,7 @@ helpMessage ="""
 """
 
 
-KAC=[nadya]
+KAC=[nadya,mid]
 mid = nadya.getProfile().mid
 Bots=[mid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
