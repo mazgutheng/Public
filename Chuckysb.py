@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #Chucky_Bot
 
-import LINETCRnjer
+import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -99,6 +99,8 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
+║             ZeяøTeαмBøт
+╚═════════════════════════
 """
 
 groupMessage ="""
@@ -205,13 +207,13 @@ helpMessage ="""
 ╔═════════════════════════
 ║              ☆☞ H E L P ☜☆
 ╠═════════════════════════
-╠➩〘Help Creator〙
-╠➩〘Help Group〙
-╠➩〘Help Self〙
-╠➩〘Help Bot〙
-╠➩〘Help Set〙
-╠➩〘Help Media〙
-╠➩〘Help Admin〙
+╠➩〘Help 1〙
+╠➩〘Help 2〙
+╠➩〘Help 3〙
+╠➩〘Help 4〙
+╠➩〘Help 5〙
+╠➩〘Help 6〙
+╠➩〘Help 7〙
 ╠➩〘Owner〙
 ╠➩〘Pap owner〙
 ╠➩〘Admin〙
@@ -1096,28 +1098,28 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["Help creator","help creator","Help Creator"]:
+            elif msg.text in ["Key 1","help 1","Help 1"]:
                 nadya.sendText(msg.to,creatorMessage)
 
-            elif msg.text in ["Help group","help group","Help Group"]:
+            elif msg.text in ["Key 2","help 2","Help 2"]:
                 nadya.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
                 nadya.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Help self","help self","Help Self"]:
+            elif msg.text in ["Key 3","help 3","Help 3"]:
                 nadya.sendText(msg.to,selfMessage)
 
-            elif msg.text in ["Help bot","help bot","Help Bot"]:
+            elif msg.text in ["Key 4","help 4","Help 4"]:
                 nadya.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Help set","help set","Help Set"]:
+            elif msg.text in ["Key 5","help 5","Help 5"]:
                 nadya.sendText(msg.to,setMessage)
 
-            elif msg.text in ["Help media","help media","Help Media"]:
+            elif msg.text in ["Key 6","help 6","Help 6"]:
                 nadya.sendText(msg.to,mediaMessage)
                 
-            elif msg.text in ["Help admin","help admin","Help Admin"]:
+            elif msg.text in ["Key 7","help 7","Help 7"]:
                 nadya.sendText(msg.to,adminMessage)                
                 
 
@@ -2118,8 +2120,10 @@ def bot(op):
 		gid = nadya.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			nadya.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~gkada.line")
+			nadya.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~nad_nad.")
 		    nadya.sendText(msg.to,"Success BC BosQ")
+		else:
+		    nadya.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Cancel"]:
                 gid = nadya.getGroupIdsInvited()
@@ -2364,7 +2368,7 @@ def bot(op):
                     nadya.sendText(msg.to, "Done (^_^)")
                 except Exception as e:
                     nadya.sendText(msg.to, str(e))
-#--------------------------------------------------------
+
  
 	    elif "/musik " in msg.text:
 					songname = msg.text.replace("/musik ","")
@@ -2376,7 +2380,7 @@ def bot(op):
 						abc = song[3].replace('https://','http://')
 						nadya.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
 						nadya.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						nadya.sendAudioWithURL(msg.to, song[4])
+						nadya.sendAudioWithURL(msg.to,abc)
 						nadya.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
 	
             elif '/lirik ' in msg.text.lower():
@@ -2504,7 +2508,7 @@ def bot(op):
                                 nadya.sendText(msg.to,"Upload image failed.")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
-                                link = ["http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=ucad303333969352466bfecd62089a1b4&oid=3df4d6a6519a87e8059b37c23c1adc63"]
+                                link = ["http://dl.profile.line-cdn.net/0hNPsZWL9WEX9OIz0lhyFuKHJmHxI5DRc3NkJaETwkRklqGwQoJkNbTGklHRo2G1B7cxFXH2NxSU03"]
                                 pilih = random.choice(link)
                                 nadya.sendImageWithURL(msg.to,pilih)
 
