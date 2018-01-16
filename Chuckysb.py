@@ -222,7 +222,7 @@ helpMessage ="""
 """
 
 
-KAC=[nadya,mid]
+KAC=[nadya]
 mid = nadya.getProfile().mid
 Bots=[mid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
