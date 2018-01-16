@@ -2366,8 +2366,8 @@ def bot(op):
                     nadya.sendText(msg.to, str(e))
 #--------------------------------------------------------
 #Script Voice note Google
-            elif wait "Vn:" in msg.text:
-                say = msg.text.replace(wait "Vn:","")
+            elif wait "Vn: " in msg.text:
+                say = msg.text.replace(wait "Vn: ","")
                 contact = nadya.getContact(msg.from_)
                 cName = contact.displayName
                 lang = 'id'
