@@ -99,8 +99,6 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             ZeяøTeαмBøт
-╚═════════════════════════
 """
 
 groupMessage ="""
