@@ -1107,10 +1107,10 @@ def bot(op):
             elif msg.text in ["Key","help","Help"]:
                 nadya.sendText(msg.to,helpMessage)		
 
-            elif msg.text in ["Help self","help self","Help Self"]:
-                nadya.sendText(msg.to,helpMessage)
+            elif msg.text in ["Help bot","help bot","Help Bot"]:
+                nadya.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Help 1","help 1","Help 1"]:
+            elif msg.text in ["Help self","help self","Help Self"]:
                 nadya.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Help set","help set","Help Set"]:
