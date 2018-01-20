@@ -244,10 +244,6 @@ protectMessage ="""
 
 
 KAC=[cl]
-mid = cl.getProfile().mid
-Amid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Emid = km.getProfile().mid
 Bots=[mid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
 admin=["ucad303333969352466bfecd62089a1b4"]
@@ -258,21 +254,7 @@ backup1.displayName = contact.displayName
 backup1.statusMessage = contact.statusMessage                        
 backup1.pictureStatus = contact.pictureStatus
 
-contact = ki.getProfile()
-backup2 = ki.getProfile()
-backup2.displayName = contact.displayName
-backup2.statusMessage = contact.statusMessage                        
-backup2.pictureStatus = contact.pictureStatus
-
-contact = kk.getProfile()
-backup3 = kk.getProfile()
-backup3.displayName = contact.displayName
-backup3.statusMessage = contact.statusMessage                        
-backup3.pictureStatus = contact.pictureStatus
-
 responsename = cl.getProfile().displayName
-responsename2 = ki.getProfile().displayName
-responsename3 = kk.getProfile().displayName
 
 
 wait = {
