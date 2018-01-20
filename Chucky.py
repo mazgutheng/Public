@@ -28,18 +28,6 @@ kk.login(token='TOKEN_KAMU_DISINI_BEIB')
 kk.loginResult()
 print "Kk-Login Success\n"
 
-kc = LINETCR.LINE()
-#kc.login(qr=True)
-kc.login(token='TOKEN_KAMU_DISINI_BEIB')
-kc.loginResult()
-print "Kc-Login Success\n"
-
-kr = LINETCR.LINE()
-#kr.login(qr=True)
-kr.login(token='TOKEN_KAMU_DISINI_BEIB')
-kr.loginResult()
-print "Kr-Login Success\n"
-
 km = LINETCR.LINE()
 #km.login(qr=True)
 km.login(token='TOKEN_KAMU_DISINI_BEIB')
@@ -282,10 +270,8 @@ KAC=[cl,ki,kk,kc,kr]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
-Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
+Bots=[mid,Amid,Bmid,Emid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
 admin=["ucad303333969352466bfecd62089a1b4"]
 
@@ -307,23 +293,9 @@ backup3.displayName = contact.displayName
 backup3.statusMessage = contact.statusMessage                        
 backup3.pictureStatus = contact.pictureStatus
 
-contact = kc.getProfile()
-backup4 = kc.getProfile()
-backup4.displayName = contact.displayName
-backup4.statusMessage = contact.statusMessage                        
-backup4.pictureStatus = contact.pictureStatus
-
-contact = kr.getProfile()
-backup5 = kr.getProfile()
-backup5.displayName = contact.displayName
-backup5.statusMessage = contact.statusMessage                        
-backup5.pictureStatus = contact.pictureStatus
-
 responsename = cl.getProfile().displayName
 responsename2 = ki.getProfile().displayName
 responsename3 = kk.getProfile().displayName
-responsename4 = kc.getProfile().displayName
-responsename5 = kr.getProfile().displayName
 
 
 wait = {
@@ -629,8 +601,6 @@ def bot(op):
                             Name = cl.getContact(op.param2).displayName
                             Name = ki.getContact(op.param2).displayName
                             Name = kk.getContact(op.param2).displayName
-                            Name = kc.getContact(op.param2).displayName
-                            Name = kr.getContact(op.param2).displayName
                             if Name in cctv['sidermem'][op.param1]:
                                 pass
                             else:
@@ -672,12 +642,7 @@ def bot(op):
             if op.param3 in Bmid:
 		if op.param2 in Creator:
 		    kk.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Creator:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Creator:
-		    kr.acceptGroupInvitation(op.param1)
+		
  
             if op.param3 in mid:
 		if op.param2 in Amid:
@@ -709,25 +674,6 @@ def bot(op):
 		if op.param2 in Cmid:
 		    kk.acceptGroupInvitation(op.param1)
  
-            if op.param3 in Cmid:
-		if op.param2 in mid:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Amid:
-		    kc.acceptGroupInvitation(op.param1)
-            if op.param3 in Cmid:
-		if op.param2 in Cmid:
-		    kc.acceptGroupInvitation(op.param1)
- 
-            if op.param3 in Dmid:
-		if op.param2 in mid:
-		    kr.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Amid:
-		    kr.acceptGroupInvitation(op.param1)
-            if op.param3 in Dmid:
-		if op.param2 in Bmid:
-		    kr.acceptGroupInvitation(op.param1)
 		    
 	    if mid in op.param3:	        
                 if wait["AutoJoinCancel"] == True:
@@ -747,8 +693,6 @@ def bot(op):
 			Ti = cl.reissueGroupTicket(op.param1)
 			ki.acceptGroupInvitationByTicket(op.param1,Ti)
 			kk.acceptGroupInvitationByTicket(op.param1,Ti)
-			kc.acceptGroupInvitationByTicket(op.param1,Ti)
-			kr.acceptGroupInvitationByTicket(op.param1,Ti)
 			G.preventJoinByTicket = True
 			cl.updateGroup(G)
 			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
@@ -767,8 +711,6 @@ def bot(op):
 			Ti = cl.reissueGroupTicket(op.param1)
 			ki.acceptGroupInvitationByTicket(op.param1,Ti)
 			kk.acceptGroupInvitationByTicket(op.param1,Ti)
-			kc.acceptGroupInvitationByTicket(op.param1,Ti)
-			kr.acceptGroupInvitationByTicket(op.param1,Ti)
 			G.preventJoinByTicket = True
 			cl.updateGroup(G)
 			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
@@ -864,8 +806,6 @@ def bot(op):
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
                     X = cl.getGroup(op.param1)
                     X.preventJoinByTicket = True
                     cl.updateGroup(X)
@@ -903,7 +843,6 @@ def bot(op):
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ki.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ki.updateGroup(G)
@@ -941,8 +880,6 @@ def bot(op):
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kk.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kk.updateGroup(G)
@@ -980,8 +917,6 @@ def bot(op):
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kc.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kc.updateGroup(G)
@@ -1019,8 +954,6 @@ def bot(op):
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kr.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kc.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kc.updateGroup(G)
@@ -1175,13 +1108,9 @@ def bot(op):
                      cl.like(url[25:58], url[66:], likeType=1005)
                      ki.like(url[25:58], url[66:], likeType=1002)
                      kk.like(url[25:58], url[66:], likeType=1004)
-                     kc.like(url[25:58], url[66:], likeType=1003)
-                     kr.like(url[25:58], url[66:], likeType=1001)
                      cl.comment(url[25:58], url[66:], wait["comment1"])
                      ki.comment(url[25:58], url[66:], wait["comment2"])
                      kk.comment(url[25:58], url[66:], wait["comment3"])
-                     kc.comment(url[25:58], url[66:], wait["comment4"])
-                     kr.comment(url[25:58], url[66:], wait["comment5"])
                      cl.sendText(msg.to,"Like Success")                     
                      wait['likeOn'] = False
 
@@ -1341,8 +1270,6 @@ def bot(op):
                 gs = cl.getGroup(msg.to)
                 gs = ki.getGroup(msg.to)
                 gs = kk.getGroup(msg.to)
-                gs = kc.getGroup(msg.to)
-                gs = kr.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
@@ -1369,8 +1296,6 @@ def bot(op):
                 gs = cl.getGroup(msg.to)
                 gs = ki.getGroup(msg.to)
                 gs = kk.getGroup(msg.to)
-                gs = kc.getGroup(msg.to)
-                gs = kr.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
@@ -1495,9 +1420,7 @@ def bot(op):
                      invite = msg.contentMetadata["mid"]
                      groups = cl.getGroup(msg.to)
                      groups = ki.getGroup(msg.to)                     
-                     groups = kk.getGroup(msg.to)                     
-                     groups = kc.getGroup(msg.to)                     
-                     groups = kr.getGroup(msg.to)                     
+                     groups = kk.getGroup(msg.to)                                         
                      pending = groups.invitee
                      targets = []
                      for s in groups.members:
@@ -1512,9 +1435,7 @@ def bot(op):
                              try:
                                  cl.findAndAddContactsByMid(target)
                                  ki.findAndAddContactsByMid(target)                                 
-                                 kk.findAndAddContactsByMid(target)                                 
-                                 kc.findAndAddContactsByMid(target)                                 
-                                 kr.findAndAddContactsByMid(target)                                 
+                                 kk.findAndAddContactsByMid(target)                                                                  
                                  random.choice(KAC).inviteIntoGroup(msg.to,[target])
                                  random.choice(KAC).sendText(msg.to,"Invite " + _name)
                                  wait['invite'] = False
@@ -1607,16 +1528,12 @@ def bot(op):
 		gid = cl.getGroupIdsJoined()
 		gid = ki.getGroupIdsJoined()
 		gid = kk.getGroupIdsJoined()
-		gid = kc.getGroupIdsJoined()
-		gid = kr.getGroupIdsJoined()
 		try:
 		    if msg.from_ in Creator:
                         for i in gid:
                             h = cl.getGroup(i).name
                             h = ki.getGroup(i).name
                             h = kk.getGroup(i).name
-                            h = kc.getGroup(i).name
-                            h = kr.getGroup(i).name
 		            if h == ng:
 		                random.choice(KAC).inviteIntoGroup(i,[Creator])
 			        cl.sendText(msg.to,"Success Join To ["+ h +"] Group")
@@ -1638,8 +1555,6 @@ def bot(op):
 		            cl.leaveGroup(i)
 			    ki.leaveGroup(i)
 			    kk.leaveGroup(i)
-			    kc.leaveGroup(i)
-			    kr.leaveGroup(i)
 			    cl.sendText(msg.to,"Success Left ["+ h +"] group")
 			else:
 			    pass
@@ -1654,8 +1569,6 @@ def bot(op):
 		        cl.leaveGroup(i)
 			ki.leaveGroup(i)
 			kk.leaveGroup(i)
-			kc.leaveGroup(i)
-			kr.leaveGroup(i)
 		    cl.sendText(msg.to,"Success Leave All Group")
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")
@@ -2663,8 +2576,6 @@ def bot(op):
                 cl.findAndAddContactsByMid(midd)
                 ki.findAndAddContactsByMid(midd)
                 kk.findAndAddContactsByMid(midd)
-                kc.findAndAddContactsByMid(midd)
-                kr.findAndAddContactsByMid(midd)
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
@@ -2741,10 +2652,6 @@ def bot(op):
                     time.sleep(0.2)
                     kk.acceptGroupInvitationByTicket(msg.to,Ticket)
                     time.sleep(0.2)
-                    kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    time.sleep(0.2)
                     G = cl.getGroup(msg.to)
                     G.preventJoinByTicket = True
                     ki.updateGroup(G)
@@ -2780,34 +2687,7 @@ def bot(op):
                     kk.updateGroup(G)
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
-
-            elif msg.text in ["TC3 join"]:
-		if msg.from_ in admin:
-                    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    G.preventJoinByTicket = True
-                    kc.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")                    
-
-            elif msg.text in ["TC4 join"]:
-		if msg.from_ in admin:
-                    G = cl.getGroup(msg.to)
-                    ginfo = cl.getGroup(msg.to)
-                    G.preventJoinByTicket = False
-                    cl.updateGroup(G)
-                    invsend = 0
-                    Ticket = cl.reissueGroupTicket(msg.to)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ticket)
-                    G.preventJoinByTicket = True
-                    kr.updateGroup(G)
-		else:
-		    cl.sendText(msg.to,"Sape lu!")
+		
 		    
             elif msg.text in ["Ghost join"]:
 		if msg.from_ in admin:
@@ -2836,8 +2716,6 @@ def bot(op):
               if wait["Leave"] == True:		    
                     ki.leaveGroup(msg.to)
                     kk.leaveGroup(msg.to)
-                    kc.leaveGroup(msg.to)
-                    kr.leaveGroup(msg.to)
               else:
 		          cl.sendText(msg.to,"Leavenya Belum On")                    
 
@@ -2852,17 +2730,14 @@ def bot(op):
             elif msg.text in ["Absen"]:
 		cl.sendText(msg.to,"Pasukan Absen!!")
                 ki.sendText(msg.to,"TC1 Hadiir  \(ˆ▿ˆ)/")
-                kk.sendText(msg.to,"TC2 Hadiir  \(ˆ▿ˆ)/")
-                kc.sendText(msg.to,"TC3 Hadiir  \(ˆ▿ˆ)/")
-                kr.sendText(msg.to,"Hadiir Semua Kapten  \(ˆ▿ˆ)/")
+                kk.sendText(msg.to,"Hadiir Semua Kapten  \(ˆ▿ˆ)/")
 
 
             elif msg.text.lower() in ["respon"]:
                 cl.sendText(msg.to,responsename)
                 ki.sendText(msg.to,responsename2)
                 kk.sendText(msg.to,responsename3)
-                kc.sendText(msg.to,responsename4)
-                kr.sendText(msg.to,responsename5)
+		
 
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
@@ -2885,7 +2760,7 @@ def bot(op):
                     cl.updateGroup(X)
                     invsend = 0
                     Ti = cl.reissueGroupTicket(msg.to)
-                    kr.acceptGroupInvitationByTicket(msg.to,Ti)
+                    ki.acceptGroupInvitationByTicket(msg.to,Ti)
                     G = kk.getGroup(msg.to)
                     G.preventJoinByTicket = True
                     kk.updateGroup(G)
@@ -2906,8 +2781,8 @@ def bot(op):
                     else:
                         for target in targets:
 			    if target not in admin:
-                                kr.kickoutFromGroup(msg.to,[target])
-                                kr.leaveGroup(msg.to)
+                                ki.kickoutFromGroup(msg.to,[target])
+                                ki.leaveGroup(msg.to)
                                 ki.sendText(msg.to,"Succes BosQ")
                                 kk.sendText(msg.to,"Pakyu~")
 			    else:
@@ -3148,44 +3023,7 @@ def bot(op):
                             except Exception as e:
                                 print e
                                 
-            elif "TC3 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC3 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kc.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kc.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kc.CloneContactProfile(target)
-                               kc.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e                                
-
-            elif "TC4 copy @" in msg.text:
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC4 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kr.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kr.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kr.CloneContactProfile(target)
-                               kr.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e
-
+				
             elif msg.text in ["Backup all"]:
                 try:
                     ki.updateDisplayPicture(backup2.pictureStatus)
@@ -3193,12 +3031,6 @@ def bot(op):
 
                     kk.updateDisplayPicture(backup3.pictureStatus)
                     kk.updateProfile(backup3)
-
-                    kc.updateDisplayPicture(backup4.pictureStatus)
-                    kc.updateProfile(backup4)
-
-                    kr.updateDisplayPicture(backup5.pictureStatus)
-                    kr.updateProfile(backup5)
                     
                     cl.updateDisplayPicture(backup1.pictureStatus)
                     cl.updateProfile(backup1)
@@ -3491,7 +3323,7 @@ def bot(op):
 
             elif msg.text.lower() in ["hi","hai","halo","hallo"]:
                     beb = "Hi Sayang 😘 " +cl.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
-                    kr.sendText(msg.to,beb)
+                    ki.sendText(msg.to,beb)
 
 
 
@@ -3521,8 +3353,6 @@ def bot(op):
                         cl.updateProfile(profile)
                         ki.updateProfile(profile)
                         kk.updateProfile(profile)
-                        kc.updateProfile(profile)
-                        kr.updateProfile(profile)
                         cl.sendText(msg.to,"All Done")
 
             elif "/cnkapten" in msg.text:
@@ -3551,24 +3381,6 @@ def bot(op):
                         profile.displayName = string
                         kk.updateProfile(profile)
                         kk.sendText(msg.to,"Done")
-
-            elif "/cntc3" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc3","Chucky TC3")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = kc.getProfile()
-                        profile.displayName = string
-                        kc.updateProfile(profile)
-                        kc.sendText(msg.to,"Done")
-
-            elif "/cntc4" in msg.text:
-		if msg.from_ in Creator:
-                    string = msg.text.replace("/cntc4","Chucky TC4")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = cl.getProfile()
-                        profile.displayName = string
-                        kr.updateProfile(profile)
-                        kr.sendText(msg.to,"Done")
 
 
             elif "Ulti " in msg.text:
@@ -3612,7 +3424,7 @@ def bot(op):
 
             elif msg.text.lower() in ["mymid","myid"]:
                 middd = "Name : " +cl.getContact(msg.from_).displayName + "\nMid : " +msg.from_
-                kr.sendText(msg.to,middd)
+                ki.sendText(msg.to,middd)
 
             elif msg.text.lower() in ["me"]:
                 msg.contentType = 13
@@ -3990,8 +3802,6 @@ def bot(op):
                         cl.removeAllMessages(op.param2)
                         ki.removeAllMessages(op.param2)
                         kk.removeAllMessages(op.param2)
-                        kc.removeAllMessages(op.param2)
-                        kr.removeAllMessages(op.param2)
                         print "[Command] Remove Chat"
                         cl.sendText(msg.to,"Done")
                     except Exception as error:
@@ -4009,8 +3819,6 @@ def bot(op):
                             cl.findAndAddContactsByMid(msg.from_)
                             ki.findAndAddContactsByMid(msg.from_)
                             kk.findAndAddContactsByMid(msg.from_)
-                            kc.findAndAddContactsByMid(msg.from_)
-                            kr.findAndAddContactsByMid(msg.from_)
                             random.choice(KAC).inviteIntoGroup(gid,[msg.from_])
                         except:
                             cl.sendText(msg.to,"Mungkin Saya Tidak Di Dalaam Grup Itu")
@@ -4025,15 +3833,15 @@ def bot(op):
                 cl.sendText(msg.to,"╔═════════════════════════\n║          ☆☞ LIST GROUPS☜☆\n╠═════════════════════════\n" + h + "╠═════════════════════════" + "\n║ Total Groups =" +" ["+str(len(gid))+"]\n╚═════════════════════════")
 
             elif msg.text in ["Glistmid"]:   
-                gruplist = kr.getGroupIdsJoined()
-                kontak = kr.getGroups(gruplist)
+                gruplist = ki.getGroupIdsJoined()
+                kontak = ki.getGroups(gruplist)
                 num=1
                 msgs="═════════List GrupMid═════════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.id)
                     num=(num+1)
                 msgs+="\n═════════List GrupMid═════════\n\nTotal Grup : %i" % len(kontak)
-                kr.sendText(msg.to, msgs)
+                ki.sendText(msg.to, msgs)
 
 
 
@@ -4131,38 +3939,7 @@ def bot(op):
                         kk.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
                     else:
                         kk.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC3 acc invite"]:
-                if msg.from_ in admin:
-                    gid = kc.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kc.getGroup(i)
-                            _list += gids.name
-                            kc.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kc.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kc.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-            elif msg.text in ["TC4 acc invite"]:
-                if msg.from_ in admin:
-                    gid = kr.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kr.getGroup(i)
-                            _list += gids.name
-                            kr.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kr.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kr.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")                          
+                                                
 
 
             elif "Gif gore" in msg.text:
