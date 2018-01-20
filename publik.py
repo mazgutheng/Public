@@ -1702,7 +1702,7 @@ def bot(op):
                                     'PRDTYPE': 'THEME',
                                     'MSGTPL': '8'}
                 msg.text = None
-                kc.sendMessage(msg)
+                cl.sendMessage(msg)
                 
                 
             elif "Gift1 " in msg.text:
@@ -2249,7 +2249,7 @@ def bot(op):
 		        mentionees = mention['MENTIONEES']
 		        print mentionees
 		        for mention in mentionees:
-			    kc.kickoutFromGroup(msg.to,[mention['M']])
+			    cl.kickoutFromGroup(msg.to,[mention['M']])
 
 	    elif "Set member: " in msg.text:
 		if msg.from_ in admin:	 	        
@@ -2345,10 +2345,10 @@ def bot(op):
                 for i in gid:
                     cl.rejectGroupInvitation(i)
                 cl.sendText(msg.to,"All invitations have been refused")
-                gid = kc.getGroupIdsInvited()
+                gid = cl.getGroupIdsInvited()
                 for i in gid:
-                    kc.rejectGroupInvitation(i)
-                kc.sendText(msg.to,"All invitations have been refused")
+                    cl.rejectGroupInvitation(i)
+                cl.sendText(msg.to,"All invitations have been refused")
 
             elif msg.text in ["Gurl"]:
                 if msg.toType == 2:
@@ -2426,9 +2426,9 @@ def bot(op):
                     invsend = 0
                     Ti = cl.reissueGroupTicket(msg.to)
                     cl.acceptGroupInvitationByTicket(msg.to,Ti)
-                    G = kk.getGroup(msg.to)
+                    G = cl.getGroup(msg.to)
                     G.preventJoinByTicket = True
-                    kk.updateGroup(G)
+                    cl.updateGroup(G)
 
                     nk0 = msg.text.replace("Nk: ","")
                     nk1 = nk0.lstrip()
@@ -2637,24 +2637,6 @@ def bot(op):
                                cl.sendText(msg.to, "Copied (^_^)")
                             except Exception as e:
                                 print e
-
-                   print "[COPY] Ok"
-                   _name = msg.text.replace("TC2 copy @","")
-                   _nametarget = _name.rstrip('  ')
-                   gs = kk.getGroup(msg.to)
-                   targets = []
-                   for g in gs.members:
-                       if _nametarget == g.displayName:
-                           targets.append(g.mid)
-                   if targets == []:
-                       kk.sendText(msg.to, "Not Found...")
-                   else:
-                       for target in targets:
-                            try:
-                               kk.CloneContactProfile(target)
-                               kk.sendText(msg.to, "Copied (^_^)")
-                            except Exception as e:
-                                print e
                                 
 				
             elif msg.text in ["Mybackup"]:
@@ -2809,7 +2791,7 @@ def bot(op):
                                 cl.sendText(msg.to,"Upload image failed.")
 
             elif msg.text.lower() in ["pap owner","pap creator"]:
-                                link = ["http://dl.profile.line-cdn.net/0hNPsZWL9WEX9OIz0lhyFuKHJmHxI5DRc3NkJaETwkRklqGwQoJkNbTGklHRo2G1B7cxFXH2NxSU03"]
+                                link = ["http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=ucad303333969352466bfecd62089a1b4&oid=3df4d6a6519a87e8059b37c23c1adc63"]
                                 pilih = random.choice(link)
                                 cl.sendImageWithURL(msg.to,pilih)
 
@@ -2979,12 +2961,6 @@ def bot(op):
                         profile.statusMessage = string
                         cl.updateProfile(profile)
                         cl.sendText(msg.to,"Done")
-                    string = msg.text.replace("/cntc2","Chucky TC2")
-                    if len(string.decode('utf-8')) <= 5000:
-                        profile = kk.getProfile()
-                        profile.displayName = string
-                        kk.updateProfile(profile)
-                        kk.sendText(msg.to,"Done")
 
 
             elif "Ulti " in msg.text:
@@ -3492,7 +3468,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Grup tidak ditemukan")
             
-            elif msg.text in ["Kapten acc invite"]:
+            elif msg.text in ["Acc invite"]:
                 if msg.from_ in admin:
                     gid = cl.getGroupIdsInvited()
                     _list = ""
@@ -3507,22 +3483,7 @@ def bot(op):
                         cl.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
                     else:
                         cl.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                        
-                if msg.from_ in admin:
-                    gid = kk.getGroupIdsInvited()
-                    _list = ""
-                    for i in gid:
-                        if i is not None:
-                            gids = kk.getGroup(i)
-                            _list += gids.name
-                            kk.acceptGroupInvitation(i)
-                        else:
-                            break
-                    if gid is not None:
-                        kk.sendText(msg.to,"Berhasil terima semua undangan dari grup :\n" + _list)
-                    else:
-                        kk.sendText(msg.to,"Tidak ada grup yang tertunda saat ini")  
-                                                
+                                                                      
 
 
             elif "Gif gore" in msg.text:
