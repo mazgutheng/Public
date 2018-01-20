@@ -55,15 +55,11 @@ botMessage ="""
 ╠➩〘Absen〙
 ╠➩〘Respon〙
 ╠➩〘Runtime〙
-╠➩〘Kapten copy @〙
-╠➩〘TC1 copy @〙
-╠➩〘TC2 copy @〙
-╠➩〘TC3 copy @〙
-╠➩〘TC4 copy @〙
-╠➩〘Backup all〙
-╠➩〘/bio Text〙
-╠➩〘@bye (Usir Kapten)〙
-╠➩〘Bye all (Usir Semua)〙
+╠➩〘Mycopy @〙
+╠➩〘Mybackup〙
+╠➩〘Mybio (Text)〙
+╠➩〘Myname (Text)〙
+╠➩〘@bye〙
 ╠═════════════════════════
 """
 
@@ -244,6 +240,7 @@ protectMessage ="""
 
 
 KAC=[cl]
+mid = cl.getProfile().mid
 Bots=[mid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
 admin=["ucad303333969352466bfecd62089a1b4"]
