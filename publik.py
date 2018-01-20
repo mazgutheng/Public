@@ -786,8 +786,8 @@ def bot(op):
 
 
         if op.type == 11:
-            if wait["Qr"] == True:                if op.param2 not in Bots:
-                  if op.param2 not in admin:
+            if wait["Qr"][op.param1] == True:
+                if op.param2 not in Bots:
                     G = random.choice(KAC).getGroup(op.param1)
                     G.preventJoinByTicket = True
                     random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -1061,7 +1061,7 @@ def bot(op):
                    for target in targets:
                         try:
                             admin.append(target)
-                            cl.sendText(msg.to,"Admin Chucky Ditambahkan")
+                            cl.sendText(msg.to,"Admin Gangster Ditambahkan")
                         except:
                             pass
                 print "[Command]Admin add executed"
@@ -1085,7 +1085,7 @@ def bot(op):
                    for target in targets:
                         try:
                             admin.remove(target)
-                            cl.sendText(msg.to,"Admin Chucky Dihapus")
+                            cl.sendText(msg.to,"Admin Gangster Dihapus")
                         except:
                             pass
                 print "[Command]Admin remove executed"
@@ -3473,4 +3473,3 @@ while True:
         if (Op.type != OpType.END_OF_OPERATION):
             cl.Poll.rev = max(cl.Poll.rev, Op.revision)
             bot(Op)
-
