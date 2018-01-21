@@ -265,7 +265,7 @@ wait = {
     "LeaveRoom":True,
     "AutoJoin":False,
     "AutoJoinCancel":True,
-    "memberscancel":30,
+    "memberscancel":20,
     "Members":1,
     "AutoCancel":{},
     "AutoCancelon":False,  
@@ -611,12 +611,6 @@ def bot(op):
                         cl.leaveGroup(op.param1)                        
 		    else:
                         cl.acceptGroupInvitation(op.param1)
-			G = cl.getGroup(op.param1)
-			G.preventJoinByTicket = False
-			cl.updateGroup(G)
-			Ti = cl.reissueGroupTicket(op.param1)
-			G.preventJoinByTicket = True
-			cl.updateGroup(G)
 			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
                         		    
  
@@ -627,12 +621,6 @@ def bot(op):
                         cl.rejectGroupInvitation(op.param1)
 		    else:
                         cl.acceptGroupInvitation(op.param1)
-			G = cl.getGroup(op.param1)
-			G.preventJoinByTicket = False
-			cl.updateGroup(G)
-			Ti = cl.reissueGroupTicket(op.param1)
-			G.preventJoinByTicket = True
-			cl.updateGroup(G)
 			cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
 	    else:
                 if wait["AutoCancel"][op.param1] == True:
@@ -1656,9 +1644,7 @@ def bot(op):
             elif msg.text in ["Status"]:
                 md = ""
 		if wait["Sambutan"] == True: md+="╠➩✔️ Sambutan : On\n"
-		else:md+="╠➩❌ Sambutan : Off\n"
-		if wait["joinkick"] == True: md+="╠➩✔️ Join Kick : On\n"
-		else:md+="╠➩❌ Join Kick : Off\n"		
+		else:md+="╠➩❌ Sambutan : Off\n"		
 		if wait["AutoJoin"] == True: md+="╠➩✔️ Auto Join : On\n"
                 else: md +="╠➩❌ Auto Join : Off\n"
 		if wait["AutoJoinCancel"] == True: md+="╠➩✔️ Auto Join Cancel : On\n"
@@ -1667,22 +1653,8 @@ def bot(op):
                 else: md +="╠➩❌ Leave : Off\n"                
 		if wait["Contact"] == True: md+="╠➩✔️ Info Contact : On\n"
 		else: md+="╠➩❌ Info Contact : Off\n"
-                if wait["AutoCancelon"] == True:md+="╠➩✔️ Auto Cancel : On\n"
-                else: md+= "╠➩❌ Auto Cancel : Off\n"
-                if wait["inviteprotect"] == True:md+="╠➩✔️ Invite Protect : On\n"
-                else: md+= "╠➩❌ Invite Protect : Off\n"                
-		if wait["Qron"] == True: md+="╠➩✔️ Qr Protect : On\n"
-		else:md+="╠➩❌ Qr Protect : Off\n"
-		if wait["AutoKickon"] == True: md+="╠➩✔️ Auto Kick : On\n"
-		else:md+="╠➩❌ Auto Kick : Off\n"
-		if wait["Ghost"] == True: md+="╠➩✔️ Ghost : On\n"
-		else:md+="╠➩❌ Ghost : Off\n"
 		if wait["alwaysRead"] == True: md+="╠➩✔️ Always Read : On\n"
-		else:md+="╠➩❌ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="╠➩✔️ Auto Respon : On\n"
-		else:md+="╠➩❌ Auto Respon : Off\n"		
-		if wait["kickMention"] == True: md+="╠➩✔️ Auto Respon Kick : On\n"
-		else:md+="╠➩❌ Auto Respon Kick : Off\n"				
+		else:md+="╠➩❌ Always Read: Off\n"				
 		if wait["Sider"] == True: md+="╠➩✔️ Auto Sider : On\n"
 		else:md+="╠➩❌ Auto Sider: Off\n"	
 		if wait["Simi"] == True: md+="╠➩✔️ Simisimi : On\n"
