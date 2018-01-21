@@ -2376,12 +2376,12 @@ def bot(op):
                 start = time.time()
                 print("Speed")                
                 elapsed_time = time.time() - start
-		cl.sendText(msg.to, "Progress...")
+#		cl.sendText(msg.to, "Progress...")
                 random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))
                 
             elif msg.text in ["Speed test"]:
                 start = time.time()
-                cl.sendText(msg.to, "Progress...")
+#               cl.sendText(msg.to, "Progress...")
                 elapsed_time = time.time() - start
                 random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))                
 
@@ -2595,7 +2595,7 @@ def bot(op):
 					for song in data:
 						abc = song[3].replace('https://','http://')
 						cl.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4])
-						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+#						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
 						cl.sendAudioWithURL(msg.to,abc)
 						cl.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
 	
