@@ -1102,7 +1102,7 @@ def bot(op):
                   mc = "╔═══════════════\n║        ☆☞ ADMIN Gengster ☜☆\n╠═══════════════\n"
                   for mi_d in admin:
                       mc += "╠••> " +cl.getContact(mi_d).displayName + "\n"
-                  cl.sendText(msg.to,mc + "╚══════════════════════════════")
+                  cl.sendText(msg.to,mc + "╚═══════════════")
                   print "[Command]Admin List executed"
                  
 
@@ -1231,7 +1231,7 @@ def bot(op):
             elif msg.text in ["Key","help","Help"]:
                 cl.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Key publik","help publik","Help Publik"]:
+            elif msg.text in ["Key publik","help publik","Help publik"]:
                 cl.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
@@ -3144,22 +3144,22 @@ def bot(op):
                 contactlist = cl.getAllContactIds()
                 kontak = cl.getContacts(contactlist)
                 num=1
-                msgs="═════════List Friend═════════"
+                msgs="════List Friend════"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n═════════List Friend═════════\n\nTotal Friend : %i" % len(kontak)
+                msgs+="\n════List Friend════\n\nTotal Friend : %i" % len(kontak)
                 cl.sendText(msg.to, msgs)
 
             elif msg.text in ["Memlist"]:   
                 kontak = cl.getGroup(msg.to)
                 group = kontak.members
                 num=1
-                msgs="═════════List Member═�����═══════-"
+                msgs="════List Member═�����════"
                 for ids in group:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n═════════List Member═════════\n\nTotal Members : %i" % len(group)
+                msgs+="\n════List Member════\n\nTotal Members : %i" % len(group)
                 cl.sendText(msg.to, msgs)
 
             
