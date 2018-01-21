@@ -22,7 +22,7 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔══════╬♥╬══════
-║            ☆☞ S E L F ☜☆
+║            ☆☞ P U B L I K ☜☆
 ╠═══════════════
 ╠➩〘Hi〙
 ╠➩〘Me〙
@@ -45,6 +45,12 @@ selfMessage ="""
 ╠➩〘Getcontact @〙
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
+╠➩〘Owner〙
+╠➩〘Pap owner〙
+╠➩〘Admin〙
+╠➩〘Speed〙
+╠➩〘Speed test〙
+╠➩〘Status〙
 ╠═══════════════
 """
 
@@ -132,7 +138,7 @@ groupMessage ="""
 ╠➩〘Urlgroup Image〙
 ╠═══════════════
 """
-tjia="ucad303333969352466bfecd62089a1b4"
+tjia="uc3f054f23120463ed1fb39537a77aa07"
 
 setMessage ="""
 ╔══════╬♥╬══════
@@ -204,25 +210,31 @@ adminMessage ="""
 
 helpMessage ="""
 ╔═══════════════
-║            ☆ нυмαηвσт ☆
+║            ☆ 𝔤𝔢𝔫𝔤𝔰𝔱𝔢𝔯𝔟𝔬𝔱 ☆
 ╠═══════════════
 ║          ☆☞ H E L P ☜☆
 ╠═══════════════
 ╠➩〘Help protect〙
-╠➩〘Help self〙
+╠➩〘Help publik〙
 ╠➩〘Help bot〙
 ╠➩〘Help group〙
 ╠➩〘Help set〙
 ╠➩〘Help media〙
 ╠➩〘Help admin〙
 ╠➩〘Help creator〙
-╠➩〘Owner〙
-╠➩〘Pap owner〙
-╠➩〘Admin〙
-╠➩〘Speed〙
-╠➩〘Speed test〙
-╠➩〘Status〙
 ╠═══════════════
+║		About
+╠═══════════════
+║ bot ini dibuat hanya
+║ untuk bersenang - senang
+║ jika kalian menemukan bug
+║ silahkan screenshot
+║ kirim ke admin
+║ untuk melihat contac admin
+║ ketik "admin"
+║ Terimakasih
+╚═══════════════
+
 """
 
 protectMessage ="""
@@ -275,11 +287,11 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment1":"Kenapa Kak?",
-    "comment2":"Wkwkwk ＼（○＾ω＾○）／",
-    "comment3":"Lucu Banget!!! ヘ(^_^)ヘ",
-    "comment4":"Nice Kak (^_^)",
-    "comment5":"Bot Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
+    "comment1":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment2":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment3":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment4":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment5":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -1026,21 +1038,15 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': tjia}
                 cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Majikan Kami (^_^)")
+		cl.sendText(msg.to,"Ꮆ乇几Ꮆ丂ㄒ乇尺乃ㄖㄒ")
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
-                admin1 = "u23ad5ddec0dd0523f9caffad673d693c"
-                admin2 = "u8b2bb5214c1afc77d06901a535c23e30"
-                admin3 = "u57a54b914085fea6f04c19f6fe589057"
+                admin1 = "ucad303333969352466bfecd62089a1b4"
                 msg.contentMetadata = {'mid': tjia}
                 random.choice(KAC).sendMessage(msg)
                 msg.contentMetadata = {'mid': admin1}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': admin2}
-                random.choice(KAC).sendMessage(msg)
-                msg.contentMetadata = {'mid': admin3}
-                random.choice(KAC).sendMessage(msg)                
+                random.choice(KAC).sendMessage(msg)               
 		random.choice(KAC).sendText(msg.to,"Itu Admin Kami (^_^)")	
 		
  
@@ -1098,10 +1104,10 @@ def bot(op):
                   cl.sendText(msg.to,"The Admin List Is Empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "╔═════════════════════════\n║        ☆☞ ADMIN CHUCKY ☜☆\n╠═════════════════════════\n"
+                  mc = "╔═══════════════\n║        ☆☞ ADMIN Gengster ☜☆\n╠═══════════════\n"
                   for mi_d in admin:
                       mc += "╠••> " +cl.getContact(mi_d).displayName + "\n"
-                  cl.sendText(msg.to,mc + "╚═════════════════════════")
+                  cl.sendText(msg.to,mc + "╚══════════════════════════════")
                   print "[Command]Admin List executed"
                  
 
@@ -1230,7 +1236,7 @@ def bot(op):
             elif msg.text in ["Key","help","Help"]:
                 cl.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Key self","help self","Help self"]:
+            elif msg.text in ["Key publik","help publik","Help Publik"]:
                 cl.sendText(msg.to,selfMessage)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
@@ -1686,7 +1692,7 @@ def bot(op):
 		else:md+="╠➩❌ Auto Sider: Off\n"	
 		if wait["Simi"] == True: md+="╠➩✔️ Simisimi : On\n"
 		else:md+="╠➩❌ Simisimi: Off\n"		
-                cl.sendText(msg.to,"╔═════════════════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
+                cl.sendText(msg.to,"╔═══════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═══════════════\n"+md+"╚═══════════════")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -2229,9 +2235,9 @@ def bot(op):
                         dataResult.append(contactId[v].displayName + ' ('+timeSeen[v]+')')
                         pass
                     if len(dataResult) > 0:
-                        tukang = "╔═════════════════════════\n║         ☆☞ LIST VIEWERS ☜☆\n╠═════════════════════════\n╠➩"
+                        tukang = "╔═══════════════\n║         ☆☞ LIST VIEWERS ☜☆\n╠═══════════════\n╠➩"
                         grp = '\n╠➩ '.join(str(f) for f in dataResult)
-                        total = '\n╠═════════════════════════\n╠➩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╚═════════════════════════"
+                        total = '\n╠═══════════════\n╠➩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╚═════════════════════════"
                         cl.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
                         subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
                         cl.sendText(msg.to, "☆Auto Checkpoint☆")                        
@@ -2771,6 +2777,13 @@ def bot(op):
                     while(t):
                       cl.sendText(manusia, (bctxt))
                       t-=1
+			
+            elif "Gbc " in msg.text:
+                  if msg.from_ in admin:
+                  bctxt = msg.text.replace("Gbc ", "")
+                  n = cl.getGroupIdsJoined()
+                    for manusia in n:
+                      cl.sendText(manusia, (bctxt))
 
             elif "Cbc " in msg.text:
                   broadcasttxt = msg.text.replace("Cbc ", "") 
