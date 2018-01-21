@@ -37,7 +37,6 @@ selfMessage ="""
 ╠➩〘Auto like〙
 ╠➩〘Scbc Text〙
 ╠➩〘Cbc Text〙
-╠➩〘Gbc Text〙
 ╠➩〘Getbio @〙
 ╠➩〘Getinfo @〙
 ╠➩〘Getname @〙
@@ -210,10 +209,8 @@ adminMessage ="""
 
 helpMessage ="""
 ╔═══════════════
-║            ☆ 𝔤𝔢𝔫𝔤𝔰𝔱𝔢𝔯𝔟𝔬𝔱 ☆
-╠═══════════════
-║          ☆☞ H E L P ☜☆
-╠═══════════════
+║       ☆ ƓƐЛƓらŤƐ尺ϦØŤ ☆
+╠═══════ HELP ═══════
 ╠➩〘Help protect〙
 ╠➩〘Help publik〙
 ╠➩〘Help bot〙
@@ -222,9 +219,7 @@ helpMessage ="""
 ╠➩〘Help media〙
 ╠➩〘Help admin〙
 ╠➩〘Help creator〙
-╠═══════════════
-║		About
-╠═══════════════
+╠═══════ About ═══════
 ║ bot ini dibuat hanya
 ║ untuk bersenang - senang
 ║ jika kalian menemukan bug
@@ -2778,13 +2773,6 @@ def bot(op):
                       cl.sendText(manusia, (bctxt))
                       t-=1
 			
-            elif "Gbc " in msg.text:
-                  if msg.from_ in admin:
-                  bctxt = msg.text.replace("Gbc ", "")
-                  n = cl.getGroupIdsJoined()
-                    for manusia in n:
-                      cl.sendText(manusia, (bctxt))
-
             elif "Cbc " in msg.text:
                   broadcasttxt = msg.text.replace("Cbc ", "") 
                   orang = cl.getAllContactIds()
