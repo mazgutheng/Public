@@ -210,7 +210,7 @@ adminMessage ="""
 helpMessage ="""
 ╔═══════════════
 ║       ☆ ƓƐЛƓらŤƐ尺ϦØŤ ☆
-╠═══════ HELP ═══════
+╠════ HELP ════
 ╠➩〘Help protect〙
 ╠➩〘Help publik〙
 ╠➩〘Help bot〙
@@ -219,7 +219,7 @@ helpMessage ="""
 ╠➩〘Help media〙
 ╠➩〘Help admin〙
 ╠➩〘Help creator〙
-╠═══════ About ═══════
+╠════ About ════
 ║ bot ini dibuat hanya
 ║ untuk bersenang - senang
 ║ jika kalian menemukan bug
