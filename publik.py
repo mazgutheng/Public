@@ -2307,7 +2307,7 @@ def bot(op):
 		gid = cl.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+")
+			cl.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n")
 		    cl.sendText(msg.to,"Success BC BosQ")
 		else:
 		    cl.sendText(msg.to,"Khusus Admin")
