@@ -98,7 +98,6 @@ mediaMessage ="""
 ╠➩〘Say-en Text〙
 ╠➩〘Say-jp Text〙
 ╠➩〘Say-ko Text〙
-╠➩〘Image NamaGambar〙
 ╠➩〘Tr-id Text (Translate En Ke ID〙
 ╠➩〘Tr-en Text (Translate ID Ke En〙
 ╠➩〘Tr-th Text (Translate ID Ke Th〙
