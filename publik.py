@@ -97,6 +97,7 @@ mediaMessage ="""
 ╠➩〘Say-id Text〙
 ╠➩〘Say-en Text〙
 ╠➩〘Say-jp Text〙
+╠➩〘Say-ko Text〙
 ╠➩〘Image NamaGambar〙
 ╠➩〘Tr-id Text (Translate En Ke ID〙
 ╠➩〘Tr-en Text (Translate ID Ke En〙
@@ -211,14 +212,11 @@ helpMessage ="""
 ╔═══════════════
 ║       ☆ ƓƐЛƓらŤƐ尺ϦØŤ ☆
 ╠════ HELP ════
-╠➩〘Help protect〙
 ╠➩〘Help publik〙
 ╠➩〘Help bot〙
 ╠➩〘Help group〙
 ╠➩〘Help set〙
 ╠➩〘Help media〙
-╠➩〘Help admin〙
-╠➩〘Help creator〙
 ╠════ About ════
 ║ bot ini dibuat hanya
 ║ untuk bersenang - senang
@@ -2850,6 +2848,13 @@ def bot(op):
             elif "Say-jp " in msg.text:
                 say = msg.text.replace("Say-jp ","")
                 lang = 'ja'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+		
+            elif "Say-ko " in msg.text:
+                say = msg.text.replace("Say-ko ","")
+                lang = 'ko'
                 tts = gTTS(text=say, lang=lang)
                 tts.save("hasil.mp3")
                 cl.sendAudio(msg.to,"hasil.mp3")
