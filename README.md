@@ -1,11 +1,5 @@
 # Chuckyfix
 BOT PROTECT CREATOR & ADMIN & 5 BOT + 1 GHOST.
-------
-GET TOKEN :
-------
-- `Google Chrome`
-- `http://www.tanaka.co.id:6969`
-- `Bot Alphat : https://github.com/Nadyatjia/AlphatTJ`
 -
 Cara Install Bot Chucky :
 ------
@@ -47,14 +41,3 @@ Di C9 :
 Di Termux :
 - Ketik -> `cd Chucky`
 - Ketik -> `python2 Chucky.py`
-
-
-Credit By@ Nadya Sutjiadi.
-------
-- `Follow My Instagram : nadya.tjia`
-- `Add My ID LINE : nad_nad. (pake titik)`
-
-Thx To :
-------
-- `LINE-TCR TEAM`
-
