@@ -168,7 +168,7 @@ setMessage ="""
 [☆] [αlíҽղ]SELFBOT [☆]
 ╔═══ Command Set ═══
 ║ Sambutan on/off
-║ Url on/off
+║ 「Buka/Tutup」qr
 ║ Alwaysread on/off
 ║ Sider on/off
 ║ Contact on/off
@@ -1672,21 +1672,21 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
-            elif msg.text in ["Ourl","Url on"]:
+            elif msg.text in ["Buka qr","Open qr"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
                     cl.updateGroup(X)
-                    cl.sendText(msg.to,"Url Sudah Aktif")
+                    cl.sendText(msg.to,"QR Sudah Dibuka")
                 else:
                     cl.sendText(msg.to,"Can not be used outside the group")
  
-            elif msg.text in ["Curl","Url off"]:
+            elif msg.text in ["Tutup qr","Close qr"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = True
                     cl.updateGroup(X)
-                    cl.sendText(msg.to,"Url Sudah Di Nonaktifkan")
+                    cl.sendText(msg.to,"QR Sudah Di Nonaktifkan")
 
                 else:
                     cl.sendText(msg.to,"Can not be used outside the group")
