@@ -14,16 +14,16 @@ nadya = LINETCR.LINE()
 #nadya.login(qr=True)
 nadya.login(token='TOKEN_KAMU_DISINI_BEIB')
 nadya.loginResult()
-print "Nadya-Login Success\n\n=====[Sukses Login]====="
+print "\n=====[Sukses Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
 selfMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║            ☆☞ S E L F ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Hi〙
 ╠➩〘Me〙
 ╠➩〘Mymid〙
@@ -45,13 +45,13 @@ selfMessage ="""
 ╠➩〘Getcontact @〙
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
-╠═════════════════════════
+╠═══════════════
 """
 
 botMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║             ☆☞ B O T ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Absen〙
 ╠➩〘Respon〙
 ╠➩〘Runtime〙
@@ -60,13 +60,13 @@ botMessage ="""
 ╠➩〘Mybio (Text)〙
 ╠➩〘Myname (Text)〙
 ╠➩〘@bye〙
-╠═════════════════════════
+╠═══════════════
 """
 
 mediaMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║           ☆☞ M E D I A ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Gift〙
 ╠➩〘Gift1 @ s/d Gift10 @〙
 ╠➩〘Giftbycontact〙
@@ -98,13 +98,13 @@ mediaMessage ="""
 ╠➩〘Id@en Text (Translate ID Ke En〙
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
-╠═════════════════════════
+╠═══════════════
 """
 
 groupMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║           ☆☞ G R O U P ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Welcome〙
 ╠➩〘Say welcome〙
 ╠➩〘Invite creator〙
@@ -128,27 +128,27 @@ groupMessage ="""
 ╠➩〘Memlist〙
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
-╠═════════════════════════
+╠═══════════════
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
 setMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║              ☆☞ S E T ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Sambutan on/off〙
 ╠➩〘Url on/off〙
 ╠➩〘Alwaysread on/off〙
 ╠➩〘Sider on/off〙
 ╠➩〘Contact on/off〙
 ╠➩〘Simisimi on/off〙
-╠═════════════════════════
+╠═══════════════
 """
 
 creatorMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║         ☆☞ C R E A T O R ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Admin add @〙
 ╠➩〘Admin remove @〙
 ╠➩〘Crash〙
@@ -160,13 +160,13 @@ creatorMessage ="""
 ╠➩〘Tag on/off〙
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
-╠═════════════════════════
+╠═══════════════
 """
 
 adminMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║            ☆☞ A D M I N ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Admin list〙
 ╠➩〘Allprotect on/off〙
 ╠➩〘Ban〙
@@ -198,13 +198,13 @@ adminMessage ="""
 ╠➩〘Joincancel on/off〙
 ╠➩〘Respon on/off〙
 ╠➩〘Responkick on/off〙
-╠═════════════════════════
+╠═══════════════
 """
 
 helpMessage ="""
-╔═════════════════════════
+╔══════╬♥╬══════
 ║              ☆☞ H E L P ☜☆
-╠═════════════════════════
+╠═══════════════
 ╠➩〘Help Creator〙
 ╠➩〘Help Group〙
 ╠➩〘Help Media〙
@@ -218,7 +218,7 @@ helpMessage ="""
 ╠➩〘Speed〙
 ╠➩〘Speed test〙
 ╠➩〘Status〙
-╠═════════════════════════
+╠═══════════════
 """
 
 
@@ -802,7 +802,7 @@ def bot(op):
                                   break              
 
 
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
 
 
@@ -936,7 +936,7 @@ def bot(op):
                    for target in targets:
                         try:
                             admin.append(target)
-                            nadya.sendText(msg.to,"Admin Chucky Ditambahkan")
+                            nadya.sendText(msg.to,"Admin Ditambahkan")
                         except:
                             pass
                 print "[Command]Admin add executed"
@@ -960,7 +960,7 @@ def bot(op):
                    for target in targets:
                         try:
                             admin.remove(target)
-                            nadya.sendText(msg.to,"Admin Chucky Dihapus")
+                            nadya.sendText(msg.to,"Admin Dihapus")
                         except:
                             pass
                 print "[Command]Admin remove executed"
@@ -973,10 +973,10 @@ def bot(op):
                   nadya.sendText(msg.to,"The Admin List Is Empty")
               else:
                   nadya.sendText(msg.to,"Tunggu...")
-                  mc = "╔═════════════════════════\n║        ☆☞ ADMIN CHUCKY ☜☆\n╠═════════════════════════\n"
+                  mc = "╔═══════════════\n║        ☆☞ ADMIN CHUCKY ☜☆\n╠═══════════════\n"
                   for mi_d in admin:
                       mc += "╠••> " +nadya.getContact(mi_d).displayName + "\n"
-                  nadya.sendText(msg.to,mc + "╚═════════════════════════")
+                  nadya.sendText(msg.to,mc + "╚═══════════════")
                   print "[Command]Admin List executed"
                  
 
@@ -2118,7 +2118,7 @@ def bot(op):
 		gid = nadya.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			nadya.sendText(i,"=======[BROADCAST]=======\n\n"+bc+"\n\nContact Me : line.me/ti/p/~nad_nad.")
+			nadya.sendText(i,bc)
 		    nadya.sendText(msg.to,"Success BC BosQ")
 		else:
 		    nadya.sendText(msg.to,"Khusus Admin")
