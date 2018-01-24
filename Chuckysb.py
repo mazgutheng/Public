@@ -301,7 +301,7 @@ def download_page(url):
         import urllib,request    
         try:
             headers = {}
-            headers['User-Agent'] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+            headers['User-Agent'] = "DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0"
             req = urllib,request.Request(url, headers = headers)
             resp = urllib,request.urlopen(req)
             respData = str(resp.read())
@@ -312,7 +312,7 @@ def download_page(url):
         import urllib2
         try:
             headers = {}
-            headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
+            headers['User-Agent'] = "DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0"
             req = urllib2.Request(url, headers = headers)
             response = urllib2.urlopen(req)
             page = response.read()
