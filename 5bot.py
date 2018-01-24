@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Chucky_Bot
+#Alien_Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -258,17 +258,11 @@ helpMessage ="""
 protectMessage ="""
 [☆] [αlíҽղ]SELFBOT [☆]
 ╔═══ Command Protect ═══
-║ Help set
 ║ Allprotect on/off
-║ Help set
-║ Autocancel on/off
-║ Help set
+║ Cancl on/off
 ║ Qr on/off
-║ Help set
 ║ Autokick on/off
-║ Help set
 ║ Ghost on/off
-║ Help set
 ║ Invitepro on/off
 ╚═══════════════
 """
@@ -343,11 +337,11 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment1":"Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment2":"Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment3":"Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment4":"Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment5":"Auto Like ©By : Nadya\nContact Me : 👉 line.me/ti/p/~gkada.line",    
+    "comment1":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment2":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment3":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment4":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
+    "comment5":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -1566,7 +1560,7 @@ def bot(op):
 			else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Nadya")
+		    cl.sendText(msg.to, "Khusus Admin")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
@@ -1590,7 +1584,7 @@ def bot(op):
 		        else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Nadya")
+		    cl.sendText(msg.to, "Khusus Admin")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
@@ -1613,7 +1607,7 @@ def bot(op):
 			    else:
 			        pass
 		    else:
-		        cl.sendText(msg.to,"Khusus Nadya")
+		        cl.sendText(msg.to,"Khusus Creator")
 		except Exception as e:
 		    cl.sendText(msg.to, str(e))
  
@@ -1634,7 +1628,7 @@ def bot(op):
 			else:
 			    pass
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Creator")
  
 	    elif "Leave all group" == msg.text:
 		gid = cl.getGroupIdsJoined()
@@ -1648,7 +1642,7 @@ def bot(op):
 			kr.leaveGroup(i)
 		    cl.sendText(msg.to,"Success Leave All Group")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Creator")
 		   
 
             elif "Pict group: " in msg.text:
@@ -1697,14 +1691,14 @@ def bot(op):
                     wait["AutoJoinCancel"] = False
                     cl.sendText(msg.to,"Auto Join Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Join off","Autojoin off"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
                     cl.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 		    
 		    
             elif msg.text in ["Joincancel on","Autojoincancel on"]:
@@ -1713,14 +1707,14 @@ def bot(op):
                     wait["AutoJoin"] = False
                     cl.sendText(msg.to,"Auto Join Cancel Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Joincancel off","Autojoincancel off"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
                     cl.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")		    
+		    cl.sendText(msg.to,"Khusus Admin")		    
 		    
  
             elif msg.text in ["Respon on"]:
@@ -1729,14 +1723,14 @@ def bot(op):
                     wait["kickMention"] = False
                     cl.sendText(msg.to,"Auto Respon Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Respon off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     cl.sendText(msg.to,"Auto Respon Sudah Off")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")	
+		    cl.sendText(msg.to,"Khusus Admin")	
 		    
 		    
  
@@ -1746,126 +1740,126 @@ def bot(op):
                     wait["detectMention"] = False
                     cl.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
                     cl.sendText(msg.to,"Auto Respon Kick Sudah Off")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")			  
+		    cl.sendText(msg.to,"Khusus Admin")			  
  
             elif msg.text in ["Leave on"]:
 		if msg.from_ in admin:
                     wait["Leave"] = True
                     cl.sendText(msg.to,"Leave Sudah Aktif")
 		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    cl.sendText(msg.to,"Khusus Admin")
 		    
  
-	    elif msg.text in ["Autocancel on"]:
-#	     if msg.from_ in admin:	        
+	    elif msg.text in ["Autocancel on","Cancl on"]:
+	     if msg.from_ in admin:	        
                 wait["AutoCancel"][msg.to] = True
                 wait["AutoCancelon"] = True
                 cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
 		print wait["AutoCancel"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		
 
-	    elif msg.text in ["Autocancel off"]:
-#	     if msg.from_ in admin:	        
+	    elif msg.text in ["Autocancel off","Cancl off"]:
+	     if msg.from_ in admin:	        
                 wait["AutoCancel"][msg.to] = False
                 wait["AutoCancelon"] = False
                 cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
 		print wait["AutoCancel"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	
 
 
 	    elif msg.text in ["Joinkick on"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["joinkick"] = True
                 wait["Sambutan"] = False
                 cl.sendText(msg.to,"Join Kick Sudah Aktif")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Joinkick off"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["joinkick"] = False
                 cl.sendText(msg.to,"Join Kick Sudah Di Nonaktifkan")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	
 
 		    
 
 	    elif msg.text in ["Invitepro on","Inviteprotect on"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 cl.sendText(msg.to,"Invite Protect Sudah Aktif")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Invitepro off","Inviteprotect off"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		    
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		    
 
 	    elif "Qr on" in msg.text:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
 	        wait["Qr"][msg.to] = True
 	        wait["Qron"] = True
 	    	cl.sendText(msg.to,"QR Protect Sudah Aktif")
 		print wait["Qr"]	    	
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	    	
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	    	
 
 	    elif "Qr off" in msg.text:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
 	    	wait["Qr"][msg.to] = False
 	    	wait["Qron"] = False
 	    	cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
 		print wait["Qr"]	    	
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	    	
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	    	
                         
 	    elif msg.text in ["Autokick on"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["AutoKick"][msg.to] = True
                 wait["AutoKickon"] = True
                 cl.sendText(msg.to,"Auto Kick Sudah Aktif")
 		print wait["AutoKick"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Autokick off"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["AutoKick"][msg.to] = False
                 wait["AutoKickon"] = False
                 cl.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
 		print wait["AutoKick"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	
 
 
 	    elif msg.text in ["Ghost on"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["Ghost"] = True
                 cl.sendText(msg.to,"Ghost Sudah Aktif")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Ghost off"]:
-#	     if msg.from_ in admin:	        
+	     if msg.from_ in admin:	        
                 wait["Ghost"] = False
                 cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	     
+	     else:
+		    cl.sendText(msg.to,"Khusus Admin")	     
 
             elif msg.text in ["Allprotect on"]:
-#		if msg.from_ in admin:
+		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = True
                     wait["AutoCancelon"] = True
                     wait["inviteprotect"] = True 
@@ -1879,11 +1873,11 @@ def bot(op):
 		    print wait["AutoCancel"]
 		    print wait["AutoKick"]
 		    print wait["Qr"]
-#		else:
-#		    cl.sendText(msg.to,"Khusus Nadya")
+		else:
+		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Allprotect off"]:
-#		if msg.from_ in admin:
+		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = False
                     wait["AutoCancelon"] = False
                     wait["inviteprotect"] = False  
@@ -1897,9 +1891,9 @@ def bot(op):
 		    print wait["AutoCancel"]
 		    print wait["AutoKick"]
 		    print wait["Qr"]
-#		else:                    
-#		else:
-#		    cl.sendText(msg.to,"Khusus Nadya")
+		else:                    
+		else:
+		    cl.sendText(msg.to,"Khusus Admin")
 
 
             elif msg.text in ["K on","Contact on"]:
