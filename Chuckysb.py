@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Chucky_Bot
+#Alien_Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -1267,13 +1267,13 @@ def bot(op):
                     wait["detectMention"] = True
                     wait["kickMention"] = False
 		    if wait["lang"] == "JP":
-                    nadya.sendText(msg.to,"Auto Respon Sudah Aktif")
+                        nadya.sendText(msg.to,"Auto Respon Sudah Aktif")
 
             elif msg.text in ["Respon off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
 		    if wait["lang"] == "JP":
-                    nadya.sendText(msg.to,"Auto Respon Sudah Off")	
+                        nadya.sendText(msg.to,"Auto Respon Sudah Off")	
 		    
 		    
  
@@ -1282,27 +1282,27 @@ def bot(op):
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
 		    if wait["lang"] == "JP":
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
+                        nadya.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False  
 		    if wait["lang"] == "JP":
-                    nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")			  
+                        nadya.sendText(msg.to,"Auto Respon Kick Sudah Off")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = True
                 if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Auto Cancel Sudah Aktif")
+                    nadya.sendText(msg.to,"Auto Cancel Sudah Aktif")
 		print wait["AutoCancel"]	
 
 	    elif msg.text in ["Autocancel off"]:
 	     if msg.from_ in admin:	        
                 wait["AutoCancel"] = False
                 if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
+                    nadya.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
 		print wait["AutoCancel"]
 		    
 
@@ -1310,7 +1310,7 @@ def bot(op):
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Invite Protect Sudah Aktif")
+                    nadya.sendText(msg.to,"Invite Protect Sudah Aktif")
 		print wait["inviteprotect"]
 #	     else:
 #		    nadya.sendText(msg.to,"Khusus Rahmat")		
@@ -1319,7 +1319,7 @@ def bot(op):
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
+                    nadya.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
 		print wait["inviteprotect"]
 	     else:
 		    nadya.sendText(msg.to,"Khusus Rahmat")		    
@@ -1334,25 +1334,25 @@ def bot(op):
 	     if msg.from_ in admin:	        
 	    	wait["Qr"] = False
                 if wait["lang"] == "JP":
-	    	nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")                
+	    	    nadya.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")                
 
 	    elif "Autokick on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = True
                      if wait["lang"] == "JP":
-		     nadya.sendText(msg.to,"Auto Kick Sudah Aktif")	     
+		         nadya.sendText(msg.to,"Auto Kick Sudah Aktif")	     
 
 	    elif "Autokick off" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["AutoKick"] = False
                      if wait["lang"] == "JP":
-		     nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")	     
+		         nadya.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")	     
 
 	    elif "Ghost on" in msg.text:
 	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = True
                      if wait["lang"] == "JP":
-		     nadya.sendText(msg.to,"Ghost Sudah Aktif")
+		         nadya.sendText(msg.to,"Ghost Sudah Aktif")
 #	     else:
 #	        nadya.sendText(msg.to,"Khusus Rahmat")		     
 
@@ -1360,7 +1360,7 @@ def bot(op):
 #	     if msg.from_ in admin:	 	        
 		     wait["Ghost"] = False
                      if wait["lang"] == "JP":
-		     nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
+		         nadya.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
 #	     else:
 #	         nadya.sendText(msg.to,"Khusus Rahmat")		     
 
@@ -1372,7 +1372,7 @@ def bot(op):
                     wait["Qr"] = True
                     wait["Ghost"] = True                     
                     if wait["lang"] == "JP":
-		    nadya.sendText(msg.to,"All Protect Sudah Aktif Semua")
+		        nadya.sendText(msg.to,"All Protect Sudah Aktif Semua")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1382,29 +1382,29 @@ def bot(op):
                     wait["Qr"] = False
                     wait["Ghost"] = False
 		    if wait["lang"] == "JP":
-                    nadya.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
+                        nadya.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
 
 
             elif msg.text in ["Kontak on","Contact on"]:
                 wait["Contact"] = True
 		if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Contact Sudah Aktif")
+                   nadya.sendText(msg.to,"Contact Sudah Aktif")
 
             elif msg.text in ["Kontak off","Contact off"]:
                 wait["Contact"] = False
 		if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
+                    nadya.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
 
             elif msg.text in ["Alwaysread on"]:
                 wait["alwaysRead"] = True
 		if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Always Read Sudah Aktif")
+                    nadya.sendText(msg.to,"Always Read Sudah Aktif")
 
             elif msg.text in ["Alwaysread off"]:
                 wait["alwaysRead"] = False
 		if wait["lang"] == "JP":
-                nadya.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
+                    nadya.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
 
 
             elif msg.text in ["Sambutan on"]:
@@ -1414,7 +1414,7 @@ def bot(op):
                 else:
                     wait["Sambutan"] = True
                     if wait["lang"] == "JP":
-                        nadya.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
+                        nadya.sendTex t(msg.to,"Sudah Onヽ(´▽｀)/")
 
             elif msg.text in ["Sambutan off"]:
                 if wait["Sambutan"] == False:
