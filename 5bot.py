@@ -267,7 +267,7 @@ staffMessage ="""
 ║ Cancl on/off
 ║ Qr on/off
 ║ Cancel
-║ Invite:
+║ Undang:
 ║ Buka
 ║ Tutup
 ║ Getqr
@@ -1867,20 +1867,22 @@ def bot(op):
 		    
  
 	    elif msg.text in ["Autocancel on","Cancl on"]:
-	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = True
-                wait["AutoCancelon"] = True
-                cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
-		print wait["AutoCancel"]
+	     if msg.from_ in admin:
+	       if msg.from_ in staff:
+                  wait["AutoCancel"][msg.to] = True
+                  wait["AutoCancelon"] = True
+                  cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
+		  print wait["AutoCancel"]
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Autocancel off","Cancl off"]:
-	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = False
-                wait["AutoCancelon"] = False
-                cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
-		print wait["AutoCancel"]
+	     if msg.from_ in admin:
+	       if msg.from_ in staff:
+		  wait["AutoCancel"][msg.to] = False
+                  wait["AutoCancelon"] = False
+                  cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
+		  print wait["AutoCancel"]
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Admin")	
 
@@ -1917,20 +1919,22 @@ def bot(op):
 #		    cl.sendText(msg.to,"Khusus Admin")		    
 
 	    elif "Qr on" in msg.text:
-	     if msg.from_ in admin:	        
-	        wait["Qr"][msg.to] = True
-	        wait["Qron"] = True
-	    	cl.sendText(msg.to,"QR Protect Sudah Aktif")
-		print wait["Qr"]	    	
+	     if msg.from_ in admin:
+	       if msg.from_ in staff:
+	          wait["Qr"][msg.to] = True
+	          wait["Qron"] = True
+	    	  cl.sendText(msg.to,"QR Protect Sudah Aktif")
+		  print wait["Qr"]	    	
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Admin")	    	
 
 	    elif "Qr off" in msg.text:
-	     if msg.from_ in admin:	        
-	    	wait["Qr"][msg.to] = False
-	    	wait["Qron"] = False
-	    	cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
-		print wait["Qr"]	    	
+	     if msg.from_ in admin:
+	       if msg.from_ in staff:
+	    	  wait["Qr"][msg.to] = False
+	    	  wait["Qron"] = False
+	    	  cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
+		  print wait["Qr"]	    	
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Admin")	    	
                         
@@ -1969,6 +1973,7 @@ def bot(op):
 
             elif msg.text in ["Allprotect on"]:
 		if msg.from_ in admin:
+		  if msg.from_ in staff:
                     wait["AutoCancel"][msg.to] = True
                     wait["AutoCancelon"] = True
                     wait["inviteprotect"] = True 
@@ -1987,6 +1992,7 @@ def bot(op):
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
+		  if msg.from_ in staff:
                     wait["AutoCancel"][msg.to] = False
                     wait["AutoCancelon"] = False
                     wait["inviteprotect"] = False  
@@ -2004,13 +2010,15 @@ def bot(op):
 #		    cl.sendText(msg.to,"Khusus Admin")
 
 
-            elif msg.text in ["K on","Contact on"]:
+            elif msg.text in ["Kontak on","Contact on"]:
 		if msg.from_ in admin:
+		  if msg.from_ in staff:
                     wait["Contact"] = True
                     cl.sendText(msg.to,"Contact Sudah Aktif")
 
-            elif msg.text in ["K off","Contact off"]:
+            elif msg.text in ["Kontak off","Contact off"]:
 		if msg.from_ in admin:
+		  if msg.from_ in staff:
                     wait["Contact"] = False
                     cl.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
@@ -2025,6 +2033,9 @@ def bot(op):
 
 
             elif msg.text in ["Sambutan on"]:
+	     if op.param3 in Creator:
+ 	      if op.param3 in admin:
+ 	       if op.param3 in staff:
                 if wait["Sambutan"] == True:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
@@ -2035,6 +2046,9 @@ def bot(op):
                         cl.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
 
             elif msg.text in ["Sambutan off"]:
+	     if op.param3 in Creator:
+ 	      if op.param3 in admin:
+ 	       if op.param3 in staff:
                 if wait["Sambutan"] == False:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
@@ -2045,6 +2059,9 @@ def bot(op):
                         
                         
             elif "Sider on" in msg.text:
+	     if op.param3 in Creator:
+ 	      if op.param3 in admin:
+ 	       if op.param3 in staff:
                 try:
                     del cctv['point'][msg.to]
                     del cctv['sidermem'][msg.to]
@@ -2058,6 +2075,9 @@ def bot(op):
                 cl.sendText(msg.to,"Siap On Cek Sider")
                 
             elif "Sider off" in msg.text:
+	     if op.param3 in Creator:
+ 	      if op.param3 in admin:
+ 	       if op.param3 in staff:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
