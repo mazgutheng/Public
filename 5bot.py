@@ -52,7 +52,7 @@ sys.setdefaultencoding('utf-8')
 
 selfMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Self ═══
 ║ Hi
@@ -81,7 +81,7 @@ selfMessage ="""
 
 botMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Bot ═══
 ║ Absen
@@ -101,7 +101,7 @@ botMessage ="""
 
 mediaMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Media ═══
 ║ Gift
@@ -141,7 +141,7 @@ mediaMessage ="""
 
 groupMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Group ═══
 ║ Welcome
@@ -174,7 +174,7 @@ tjia="ucad303333969352466bfecd62089a1b4"
 
 setMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Set ═══
 ║ Sambutan on/off
@@ -188,7 +188,7 @@ setMessage ="""
 
 creatorMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Creator ═══
 ⏺ Admin add @
@@ -213,7 +213,7 @@ creatorMessage ="""
 
 adminMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Admin ═══
 ⏺ Ban
@@ -234,7 +234,7 @@ adminMessage ="""
 
 helpMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Help ═══
 ║ Public menu
@@ -246,7 +246,7 @@ helpMessage ="""
 
 protectMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Protect ═══
 ║ Allprotect on/off
@@ -260,7 +260,7 @@ protectMessage ="""
 
 staffMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Staff ═══
 ║ Allprotect on/off
@@ -277,7 +277,7 @@ staffMessage ="""
 
 publicMessage ="""
 ╔═════════════════════
-[☆] [αlíҽղ]SELFBOT [☆]
+[☆] [αlíҽղ]PROTECT [☆]
 ╚═════════════════════
 ╔═══ Command Public ═══
 ║ Me
