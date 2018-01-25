@@ -51,7 +51,9 @@ sys.setdefaultencoding('utf-8')
 
 
 selfMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Self ═══
 ║ Hi
 ║ Me
@@ -78,7 +80,9 @@ selfMessage ="""
 """
 
 botMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Bot ═══
 ║ Absen
 ║ Respon
@@ -96,7 +100,9 @@ botMessage ="""
 """
 
 mediaMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Media ═══
 ║ Gift〙
 ║ Gift1 @ s/d Gift10 @
@@ -134,7 +140,9 @@ mediaMessage ="""
 """
 
 groupMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Group ═══
 ║ Welcome
 ║ Say welcome
@@ -165,7 +173,9 @@ groupMessage ="""
 tjia="ucad303333969352466bfecd62089a1b4"
 
 setMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Set ═══
 ║ Sambutan on/off
 ║「Buka/Tutup」qr
@@ -177,7 +187,9 @@ setMessage ="""
 """
 
 creatorMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Creator ═══
 ⏺ Admin add @
 ⏺ Admin remove @
@@ -200,39 +212,23 @@ creatorMessage ="""
 """
 
 adminMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Admin ═══
-⏺ Admin list
 ⏺ Ban
 ⏺ Unban
-⏺ Ban @
-⏺ Unban @
+⏺ Hitam add @
+⏺ Hitam remove @
 ⏺ Ban list
 ⏺ Clear ban
-⏺ Kill
-⏺ Kick @
-⏺ Set member: (Jumblah)
-⏺ Ban group: (NamaGroup)
-⏺ Del ban: (NamaGroup)
-⏺ List ban
-⏺ Kill ban
-⏺ Glist
-⏺ Glistmid
-⏺ Details group: (Gid)
-⏺ Cancel invite: (Gid)
-⏺ Invitemeto: (Gid)
-⏺ Kapten acc invite
-⏺ Alien1 acc invite
-⏺ Alien2 acc invite
-⏺ Alien3 acc invite
-⏺ Alien4 acc invite
+⏺ Tagall
 ⏺ Removechat
-⏺ Join on/off
-⏺ Joincancel on/off
-⏺ Respon on/off
-⏺ Responkick on/off
+⏺ cancl on/off
 ⏺ Leave on/off
-⏺ All join / (Alien1/2/3/4 Join)
+⏺ Keluar
+⏺ Masuk
+⏺ @bye
 ╚═══════════════
 """
 
@@ -242,14 +238,16 @@ helpMessage ="""
 ╚═══════════════
 ╔═══ Command Help ═══
 ║ Public menu
-║ Help bot
+║ Staff menu
 ║ Admin menu
-║ Help creator
+║ Owner menu
 ╚═══════════════
 """
 
 protectMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Protect ═══
 ║ Allprotect on/off
 ║ Cancl on/off
@@ -260,16 +258,40 @@ protectMessage ="""
 ╚═══════════════
 """
 
-publicMessage ="""
+staffMessage ="""
+╔═══════════════
 [☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
+╔═══ Command Staff ═══
+║ Allprotect on/off
+║ Cancl on/off
+║ Qr on/off
+║ Cancel
+║ Invite:
+║ Buka
+║ Tutup
+║ Getqr
+║ Tagall
+╚═══════════════
+"""
+
+publicMessage ="""
+╔═══════════════
+[☆] [αlíҽղ]SELFBOT [☆]
+╚═══════════════
 ╔═══ Command Public ═══
+║ Me
+║ Myid
+║ Setview
+║ Viewseen
+║ SearchID: (ID LINE)
 ║ Ginfo
 ║ Pembuat
 ║ Owner
 ║ Me
 ║ Gcreator
 ║ Tagall
-║ apakah
+║ Apakah
 ║ music
 ║ Tr-id
 ║ Tr-th
@@ -287,6 +309,7 @@ Emid = km.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
 Creator=["ucad303333969352466bfecd62089a1b4"]
 admin=["ucad303333969352466bfecd62089a1b4"]
+staff=["ucad303333969352466bfecd62089a1b4"]
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -346,11 +369,11 @@ wait = {
     'kickMention':False,      
     'timeline':True,
     "Timeline":True,
-    "comment1":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment2":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment3":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment4":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",
-    "comment5":"Auto Like ©By : Rahmat\nContact Me : 👉 line.me/ti/p/~gkada.line",    
+    "comment1":"Auto Like By alien x\nline.me/ti/p/%40qic0604r",
+    "comment2":"Auto Like By alien x\nline.me/ti/p/%40qic0604r",
+    "comment3":"Auto Like By alien x\nline.me/ti/p/%40qic0604r",
+    "comment4":"Auto Like By alien x\nline.me/ti/p/%40qic0604r",
+    "comment5":"Auto Like By alien x\nline.me/ti/p/%40qic0604r",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -360,7 +383,7 @@ wait = {
     "Qr":{},
     "Qron":False,
     "Contact":False,
-    "Sambutan":True,
+    "Sambutan":False,
     "Ghost":False,
     "inviteprotect":False,   
     "alwaysRead":False,    
@@ -1318,8 +1341,8 @@ def bot(op):
             elif msg.text in ["Pembuat","pembuat"]:
                 msg.contentType = 13
                 pembuat = "ucad303333969352466bfecd62089a1b4"
-                cl.sendMessage(msg)
-		cl.sendText(msg.to,"Itu Pembuat Kami")		
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': pembuat}		
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
@@ -1330,7 +1353,64 @@ def bot(op):
                 random.choice(KAC).sendMessage(msg)               
 		random.choice(KAC).sendText(msg.to,"Itu Admin Kami")	
 		
- 
+
+            elif "Staff add @" in msg.text:
+              if msg.from_ in admin:
+                print "[Command]Staff add executing"
+                _name = msg.text.replace("Staff add @","")
+                _nametarget = _name.rstrip('  ')
+                gs = cl.getGroup(msg.to)
+                gs = ki.getGroup(msg.to)
+                gs = kk.getGroup(msg.to)
+                gs = kc.getGroup(msg.to)
+                gs = kr.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                   random.choice(KAC).sendText(msg.to,"Contact Tidak Di Temukan")
+                else:
+                   for target in targets:
+                        try:
+                            staff.append(target)
+                            cl.sendText(msg.to,"Staff Alien Ditambahkan")
+                        except:
+                            pass
+                print "[Command]Staff add executed"
+              else:
+                cl.sendText(msg.to,"Command Denied.")
+                cl.sendText(msg.to,"Creator Permission Required.")
+                
+            elif "Staff remove @" in msg.text:
+              if msg.from_ in admin:
+                print "[Command]Staff Remove Executing"
+                _name = msg.text.replace("Staff remove @","")
+                _nametarget = _name.rstrip('  ')
+                gs = cl.getGroup(msg.to)
+                gs = ki.getGroup(msg.to)
+                gs = kk.getGroup(msg.to)
+                gs = kc.getGroup(msg.to)
+                gs = kr.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                   random.choice(KAC).sendText(msg.to,"Contact Tidak Di Temukan")
+                else:
+                   for target in targets:
+                        try:
+                            staff.remove(target)
+                            cl.sendText(msg.to,"Staff Alien Dihapus")
+                        except:
+                            pass
+                print "[Command]Staff remove executed"
+              else:
+                cl.sendText(msg.to,"Command Denied.")
+                cl.sendText(msg.to,"Creator Permission Required.")
+
+
                 
             elif "Admin add @" in msg.text:
               if msg.from_ in Creator:
@@ -1524,10 +1604,13 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["Key creator","help creator","Help creator"]:
+            elif msg.text in ["Creator menu","creator menu","Creator Menu"]:
                 cl.sendText(msg.to,creatorMessage)
+		
+            elif msg.text in ["Staff menu","staff menu","Staff Menu"]:
+                cl.sendText(msg.to,staffMessage)
 
-            elif msg.text in ["Key group","help group","Help group"]:
+            elif msg.text in [".Key group",".help group",".Help group"]:
                 cl.sendText(msg.to,groupMessage)
 
             elif msg.text in ["Key","help","Help"]:
@@ -1536,10 +1619,10 @@ def bot(op):
             elif msg.text in ["Public menu","public menu","Public Menu"]:
                 cl.sendText(msg.to,publicMessage)
 
-            elif msg.text in ["Key bot","help bot","Help bot"]:
+            elif msg.text in [".Key bot",".help bot",".Help bot"]:
                 cl.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Key set","help set","Help set"]:
+            elif msg.text in [".Key set",".help set",".Help set"]:
                 cl.sendText(msg.to,setMessage)
 
             elif msg.text in ["Key media","help media","Help media"]:
@@ -1547,8 +1630,11 @@ def bot(op):
                 
             elif msg.text in ["Admin menu","admin menu","Admin Menu"]:
                 cl.sendText(msg.to,adminMessage)    
-                
-            elif msg.text in ["Key protect","help protect","Help protect"]:
+
+            elif msg.text in [".Key self",".help self",".Help self"]:
+                cl.sendText(msg.to,selfMessage)		
+		
+            elif msg.text in [".Key protect",".help protect",".Help protect"]:
                 cl.sendText(msg.to,protectMessage)                 
                 
 
@@ -1682,7 +1768,8 @@ def bot(op):
                     cl.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
             elif msg.text in ["Buka qr","Open qr"]:
-                if msg.toType == 2:
+		 if op.param3 in Creator:
+ 		  if op.param3 in admin:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
                     cl.updateGroup(X)
@@ -1691,7 +1778,9 @@ def bot(op):
                     cl.sendText(msg.to,"Can not be used outside the group")
  
             elif msg.text in ["Tutup qr","Close qr"]:
-                if msg.toType == 2:
+		 if op.param3 in Creator:
+ 		  if op.param3 in admin:
+ 	 	   if op.param3 in staff:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = True
                     cl.updateGroup(X)
@@ -1804,7 +1893,7 @@ def bot(op):
                 wait["joinkick"] = False
                 cl.sendText(msg.to,"Join Kick Sudah Di Nonaktifkan")
 #	     else:
-		    cl.sendText(msg.to,"Khusus Admin")	
+#		    cl.sendText(msg.to,"Khusus Admin")	
 
 		    
 
@@ -1812,15 +1901,15 @@ def bot(op):
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 cl.sendText(msg.to,"Invite Protect Sudah Aktif")
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")		
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Invitepro off","Inviteprotect off"]:
 	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")		    
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")		    
 
 	    elif "Qr on" in msg.text:
 	     if msg.from_ in admin:	        
@@ -1828,8 +1917,8 @@ def bot(op):
 	        wait["Qron"] = True
 	    	cl.sendText(msg.to,"QR Protect Sudah Aktif")
 		print wait["Qr"]	    	
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")	    	
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")	    	
 
 	    elif "Qr off" in msg.text:
 	     if msg.from_ in admin:	        
@@ -1837,8 +1926,8 @@ def bot(op):
 	    	wait["Qron"] = False
 	    	cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
 		print wait["Qr"]	    	
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")	    	
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")	    	
                         
 	    elif msg.text in ["Autokick on"]:
 	     if msg.from_ in admin:	        
@@ -1846,8 +1935,8 @@ def bot(op):
                 wait["AutoKickon"] = True
                 cl.sendText(msg.to,"Auto Kick Sudah Aktif")
 		print wait["AutoKick"]
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")		
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Autokick off"]:
 	     if msg.from_ in admin:	        
@@ -1855,23 +1944,23 @@ def bot(op):
                 wait["AutoKickon"] = False
                 cl.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
 		print wait["AutoKick"]
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")	
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")	
 
 
 	    elif msg.text in ["Ghost on"]:
 	     if msg.from_ in admin:	        
                 wait["Ghost"] = True
                 cl.sendText(msg.to,"Ghost Sudah Aktif")
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")		
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")		
 
 	    elif msg.text in ["Ghost off"]:
 	     if msg.from_ in admin:	        
                 wait["Ghost"] = False
                 cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
-	     else:
-		    cl.sendText(msg.to,"Khusus Admin")	     
+#	     else:
+#		    cl.sendText(msg.to,"Khusus Admin")	     
 
             elif msg.text in ["Allprotect on"]:
 		if msg.from_ in admin:
@@ -1888,8 +1977,8 @@ def bot(op):
 		    print wait["AutoCancel"]
 		    print wait["AutoKick"]
 		    print wait["Qr"]
-		else:
-		    cl.sendText(msg.to,"Khusus Admin")
+#		else:
+#		    cl.sendText(msg.to,"Khusus Admin")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -2589,7 +2678,7 @@ def bot(op):
 
 
 	    elif "Kick " in msg.text:
-		if msg.from_ in admin:	        
+		if msg.from_ in Creator:	        
 		    if 'MENTION' in msg.contentMetadata.keys()!= None:
 		        names = re.findall(r'@(\w+)', msg.text)
 		        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -2613,8 +2702,9 @@ def bot(op):
 
 
             elif msg.text in ["Invite"]:
-                wait["invite"] = True
-                cl.sendText(msg.to,"Send Contact")
+		if msg.from_ in staff:
+		    wait["invite"] = True
+		    cl.sendText(msg.to,"Send Contact")
                 
                 
 
@@ -2651,21 +2741,23 @@ def bot(op):
                     cl.sendText(msg.to,"It can't be used besides the group.")
 
             elif "Kick: " in msg.text:
-                midd = msg.text.replace("Kick: ","")
-		kicker = [ki,kk,kc]
-		if midd not in admin:
-		    random.choice(kicker).kickoutFromGroup(msg.to,[midd])
-		else:
-		    cl.sendText(msg.to,"Admin Detected")
+		if msg.from_ in staff:
+                	midd = msg.text.replace("Kick: ","")
+			kicker = [ki,kk,kc]
+			if midd not in admin:
+			    random.choice(kicker).kickoutFromGroup(msg.to,[midd])
+			else:
+			    cl.sendText(msg.to,"Admin Detected")
 
-            elif "Invite: " in msg.text:
-                midd = msg.text.replace("Invite: ","")
-                cl.findAndAddContactsByMid(midd)
-                ki.findAndAddContactsByMid(midd)
-                kk.findAndAddContactsByMid(midd)
-                kc.findAndAddContactsByMid(midd)
-                kr.findAndAddContactsByMid(midd)
-                random.choice(KAC).inviteIntoGroup(msg.to,[midd])
+            elif "Undang: " in msg.text:
+		if msg.from_ in staff:
+                	midd = msg.text.replace("Undang: ","")
+                	cl.findAndAddContactsByMid(midd)
+                	ki.findAndAddContactsByMid(midd)
+                	kk.findAndAddContactsByMid(midd)
+                	kc.findAndAddContactsByMid(midd)
+                	kr.findAndAddContactsByMid(midd)
+                	random.choice(KAC).inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
                 midd = "u14f64e139a3817afaabe27d237afb36b"
@@ -2686,7 +2778,7 @@ def bot(op):
 		gid = cl.getGroupIdsJoined()
 		if msg.from_ in Creator:
 		    for i in gid:
-			cl.sendText(i,)bc
+			cl.sendText(i,bc)
 		    cl.sendText(msg.to,"Success BC BosQ")
 		else:
 		    cl.sendText(msg.to,"Khusus Admin")
@@ -2717,6 +2809,7 @@ def bot(op):
 
             elif msg.text in ["Getqr"]:
                 if msg.toType == 2:
+		 if msg.from_ in staff:
                     x = cl.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
@@ -2729,7 +2822,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
 
-            elif msg.text in ["All join","Join all"]:
+            elif msg.text in ["Masuk","masuk"]:
 		if msg.from_ in admin:
 		    G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2832,7 +2925,7 @@ def bot(op):
 		except Exception as E:
 		    print E
 
-            elif msg.text in ["Bye all"]:
+            elif msg.text in ["Keluar","keluar"]:
               if wait["Leave"] == True:		    
                     ki.leaveGroup(msg.to)
                     kk.leaveGroup(msg.to)
@@ -3097,6 +3190,7 @@ def bot(op):
 
  
             elif "Alien copy @" in msg.text:
+              if msg.from_ in Creator:
                    print "[COPY] Ok"
                    _name = msg.text.replace("Alien copy @","")
                    _nametarget = _name.rstrip('  ')
@@ -3116,6 +3210,7 @@ def bot(op):
                                 print e
 
             elif "Alien1 copy @" in msg.text:
+              if msg.from_ in Creator:
                    print "[COPY] Ok"
                    _name = msg.text.replace("Alien1 copy @","")
                    _nametarget = _name.rstrip('  ')
@@ -3134,6 +3229,7 @@ def bot(op):
                             except Exception as e:
                                 print e
             elif "Alien2 copy @" in msg.text:
+              if msg.from_ in Creator:
                    print "[COPY] Ok"
                    _name = msg.text.replace("Alien2 copy @","")
                    _nametarget = _name.rstrip('  ')
@@ -3153,6 +3249,7 @@ def bot(op):
                                 print e
                                 
             elif "Alien3 copy @" in msg.text:
+		if msg.from_ in Creator:
                    print "[COPY] Ok"
                    _name = msg.text.replace("Alien3 copy @","")
                    _nametarget = _name.rstrip('  ')
@@ -3172,6 +3269,7 @@ def bot(op):
                                 print e                                
 
             elif "Alien4 copy @" in msg.text:
+		if msg.from_ in Creator:
                    print "[COPY] Ok"
                    _name = msg.text.replace("Alien4 copy @","")
                    _nametarget = _name.rstrip('  ')
@@ -3245,8 +3343,8 @@ def bot(op):
                 except Exception as wak:
                         cl.sendText(msg.to, str(wak))
                         
-	    elif "/musrik " in msg.text:
-					songname = msg.text.replace("/musrik ","")
+	    elif "music " in msg.text:
+					songname = msg.text.replace("music ","")
 					params = {"songname": songname}
 					r = requests.get('http://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
 					data = r.text
@@ -3257,7 +3355,7 @@ def bot(op):
 						hasil += song[0]
 						hasil += ')\n\n'
 						hasil += song[5]
-						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
+						cl.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Cari...")
 						cl.sendAudioWithURL(msg.to,abc)
 						cl.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4] +"\n\n" + hasil)
 						cl.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
@@ -3529,9 +3627,9 @@ def bot(op):
                         kr.updateProfile(profile)
                         cl.sendText(msg.to,"All Done")
 
-            elif "/cnkapten" in msg.text:
+            elif "/cnalien" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnkapten","Chucky Kapten")
+                    string = msg.text.replace("/cnalien","αlíҽղ|ᵖʳᵒᵗᵉᶜᵗ")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = cl.getProfile()
                         profile.displayName = string
@@ -3540,7 +3638,7 @@ def bot(op):
 
             elif "/cnalien1" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnalien","Gengs Alien1")
+                    string = msg.text.replace("/cnalien","αlíҽղ1|ᵖʳᵒᵗᵉᶜᵗ")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = ki.getProfile()
                         profile.displayName = string
@@ -3549,7 +3647,7 @@ def bot(op):
 
             elif "/cnalien2" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnalien2","Gengs Alien2")
+                    string = msg.text.replace("/cnalien2","αlíҽղ2|ᵖʳᵒᵗᵉᶜᵗ")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = kk.getProfile()
                         profile.displayName = string
@@ -3558,7 +3656,7 @@ def bot(op):
 
             elif "/cnalien3" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnalien3","Gengs Alien3")
+                    string = msg.text.replace("/cnalien3","αlíҽղ3|ᵖʳᵒᵗᵉᶜᵗ")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = kc.getProfile()
                         profile.displayName = string
@@ -3567,7 +3665,7 @@ def bot(op):
 
             elif "/cnalien4" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/cnalien4","Gengs Alien4")
+                    string = msg.text.replace("/cnalien4","αlíҽղ4|ᵖʳᵒᵗᵉᶜᵗ")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = cl.getProfile()
                         profile.displayName = string
@@ -3816,7 +3914,7 @@ def bot(op):
             
 
             elif msg.text in ["Spam"]:
-#              if msg.from_ in admin:
+              if msg.from_ in admin:
                 cl.sendText(msg.to,"Aku belum mandi")
                 ki.sendText(msg.to,"Tak tun tuang")
                 kk.sendText(msg.to,"Tak tun tuang")
