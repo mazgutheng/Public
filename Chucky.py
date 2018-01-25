@@ -39,9 +39,10 @@ sys.setdefaultencoding('utf-8')
 
 
 selfMessage ="""
-╔═════════════════════════
-║            ☆☞ S E L F ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═══ Command Self ════
 ╠➩〘Hi〙
 ╠➩〘Me〙
 ╠➩〘Mymid〙
@@ -63,13 +64,14 @@ selfMessage ="""
 ╠➩〘Getcontact @〙
 ╠➩〘Getvid @〙
 ╠➩〘Friendlist〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 botMessage ="""
-╔═════════════════════════
-║             ☆☞ B O T ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═════ Command Bot ═════
 ╠➩〘Absen〙
 ╠➩〘Respon〙
 ╠➩〘Runtime〙
@@ -82,17 +84,17 @@ botMessage ="""
 ╠➩〘/bio Text〙
 ╠➩〘@bye (Usir Kapten)〙
 ╠➩〘Bye all (Usir Semua)〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 mediaMessage ="""
-╔═════════════════════════
-║           ☆☞ M E D I A ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═══ Command Media ═══
 ╠➩〘Gift〙
 ╠➩〘Gift1 @ s/d Gift10 @〙
 ╠➩〘Giftbycontact〙
-╠➩〘All gift〙
 ╠➩〘Gif gore〙
 ╠➩〘Google: (Text)〙
 ╠➩〘Playstore NamaApp〙
@@ -121,13 +123,14 @@ mediaMessage ="""
 ╠➩〘Id@en Text (Translate ID Ke En〙
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 groupMessage ="""
-╔═════════════════════════
-║           ☆☞ G R O U P ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═══ Command Group ═══
 ╠➩〘Welcome〙
 ╠➩〘Say welcome〙
 ╠➩〘Invite creator〙
@@ -140,11 +143,10 @@ groupMessage ="""
 ╠➩〘Cancelall〙
 ╠➩〘Gcreator〙
 ╠➩〘Ginfo〙
-╠➩〘Gurl〙
+╠➩〘Getqr〙
 ╠➩〘List group〙
 ╠➩〘Pict group: (NamaGroup)〙
 ╠➩〘Spam: (Text)〙
-╠➩〘Spam〙
 ╠➩〘Add all〙
 ╠➩〘Kick: (Mid)〙
 ╠➩〘Invite: (Mid)〙
@@ -152,27 +154,30 @@ groupMessage ="""
 ╠➩〘Memlist〙
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
-╠═════════════════════════
+╚═════════════════════
 """
 tjia="ucad303333969352466bfecd62089a1b4"
 
 setMessage ="""
-╔═════════════════════════
-║              ☆☞ S E T ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔════ Command Set ════
 ╠➩〘Sambutan on/off〙
-╠➩〘Url on/off〙
+╠➩〘Buka〙
+╠➩〘Tutup〙
 ╠➩〘Alwaysread on/off〙
 ╠➩〘Sider on/off〙
 ╠➩〘Contact on/off〙
 ╠➩〘Simisimi on/off〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 creatorMessage ="""
-╔═════════════════════════
-║         ☆☞ C R E A T O R ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═════ Command Creator ═════
 ╠➩〘Admin add @〙
 ╠➩〘Admin remove @〙
 ╠➩〘/cnkapten〙
@@ -190,13 +195,14 @@ creatorMessage ="""
 ╠➩〘Leave all group〙
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 adminMessage ="""
-╔═════════════════════════
-║            ☆☞ A D M I N ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═════ Command Admin ═════
 ╠➩〘Admin list〙
 ╠➩〘Ban〙
 ╠➩〘Unban〙
@@ -228,13 +234,14 @@ adminMessage ="""
 ╠➩〘Responkick on/off〙
 ╠➩〘Leave on/off〙
 ╠➩〘All join / (TC1/2/3/4 Join)〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 helpMessage ="""
-╔═════════════════════════
-║              ☆☞ H E L P ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═════ Command Help ══════
 ╠➩〘Help protect〙
 ╠➩〘Help self〙
 ╠➩〘Help bot〙
@@ -249,20 +256,21 @@ helpMessage ="""
 ╠➩〘Speed〙
 ╠➩〘Speed test〙
 ╠➩〘Status〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 protectMessage ="""
-╔═════════════════════════
-║           ☆☞ P R O T E C T ☜☆
-╠═════════════════════════
+╔═════════════════════
+║     [☆] [αlíҽղ]SELF [☆]
+╚═════════════════════
+╔═════ Command Protect ══════
 ╠➩〘Allprotect on/off〙
 ╠➩〘Autocancel on/off〙
 ╠➩〘Qr on/off〙
 ╠➩〘Autokick on/off〙
 ╠➩〘Ghost on/off〙
 ╠➩〘Invitepro on/off〙
-╠═════════════════════════
+╚═════════════════════
 """
 
 
@@ -1497,7 +1505,7 @@ def bot(op):
 			else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Nadya")
+		    cl.sendText(msg.to, "Khusus Admin")
  
             elif msg.text in ["List ban","List ban group"]:
 		if msg.from_ in admin:
@@ -1521,7 +1529,7 @@ def bot(op):
 		        else:
 			    pass
 		else:
-		    cl.sendText(msg.to, "Khusus Nadya")
+		    cl.sendText(msg.to, "Khusus Admin")
  
             elif "Join group: " in msg.text:
 		ng = msg.text.replace("Join group: ","")
@@ -1650,16 +1658,14 @@ def bot(op):
 		if msg.from_ in admin:
                     wait["detectMention"] = True
                     wait["kickMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Sudah Aktif")
-		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Respon Sudah Aktif")
 
             elif msg.text in ["Respon off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Sudah Off")
-		else:
-		    cl.sendText(msg.to,"Khusus Nadya")	
+		    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Respon Sudah Off")	
 		    
 		    
  
@@ -1667,180 +1673,130 @@ def bot(op):
 		if msg.from_ in admin:
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
-                    cl.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
-		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+		    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
 
             elif msg.text in ["Responkick off"]:
 		if msg.from_ in admin:
-                    wait["kickMention"] = False                    
-                    cl.sendText(msg.to,"Auto Respon Kick Sudah Off")
-		else:
-		    cl.sendText(msg.to,"Khusus Nadya")			  
- 
-            elif msg.text in ["Leave on"]:
-		if msg.from_ in admin:
-                    wait["Leave"] = True
-                    cl.sendText(msg.to,"Leave Sudah Aktif")
-		else:
-		    cl.sendText(msg.to,"Khusus Nadya")
+                    wait["kickMention"] = False  
+		    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Auto Respon Kick Sudah Off")			  
 		    
  
 	    elif msg.text in ["Autocancel on"]:
-#	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = True
-                wait["AutoCancelon"] = True
-                cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
-		print wait["AutoCancel"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     if msg.from_ in admin:	        
+                wait["AutoCancel"] = True
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Auto Cancel Sudah Aktif")
+		print wait["AutoCancel"]	
 
 	    elif msg.text in ["Autocancel off"]:
-#	     if msg.from_ in admin:	        
-                wait["AutoCancel"][msg.to] = False
-                wait["AutoCancelon"] = False
-                cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
+	     if msg.from_ in admin:	        
+                wait["AutoCancel"] = False
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Auto Cancel Sudah Di Nonaktifkan")
 		print wait["AutoCancel"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
-
-
-	    elif msg.text in ["Joinkick on"]:
-#	     if msg.from_ in admin:	        
-                wait["joinkick"] = True
-                wait["Sambutan"] = False
-                cl.sendText(msg.to,"Join Kick Sudah Aktif")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
-
-	    elif msg.text in ["Joinkick off"]:
-#	     if msg.from_ in admin:	        
-                wait["joinkick"] = False
-                cl.sendText(msg.to,"Join Kick Sudah Di Nonaktifkan")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
-
 		    
 
-	    elif msg.text in ["Invitepro on","Inviteprotect on"]:
-#	     if msg.from_ in admin:	        
+	    elif msg.text in ["Invitepro on"]:
+	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
-                cl.sendText(msg.to,"Invite Protect Sudah Aktif")
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Invite Protect Sudah Aktif")
+		print wait["inviteprotect"]
 #	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+#		    cl.sendText(msg.to,"Khusus Rahmat")		
 
-	    elif msg.text in ["Invitepro off","Inviteprotect off"]:
-#	     if msg.from_ in admin:	        
+	    elif msg.text in ["Invitepro off"]:
+	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
-                cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		    
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
+		print wait["inviteprotect"]
+	     else:
+		    cl.sendText(msg.to,"Khusus Rahmat")		    
 
 	    elif "Qr on" in msg.text:
-#	     if msg.from_ in admin:	        
-	        wait["Qr"][msg.to] = True
-	        wait["Qron"] = True
-	    	cl.sendText(msg.to,"QR Protect Sudah Aktif")
-		print wait["Qr"]	    	
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	    	
+	     if msg.from_ in admin:	        
+	        wait["Qr"] = True
+                if wait["lang"] == "JP":
+	    	    cl.sendText(msg.to,"QR Protect Sudah Aktif")	    	
 
 	    elif "Qr off" in msg.text:
-#	     if msg.from_ in admin:	        
-	    	wait["Qr"][msg.to] = False
-	    	wait["Qron"] = False
-	    	cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")
-		print wait["Qr"]	    	
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	    	
-                        
-	    elif msg.text in ["Autokick on"]:
-#	     if msg.from_ in admin:	        
-                wait["AutoKick"][msg.to] = True
-                wait["AutoKickon"] = True
-                cl.sendText(msg.to,"Auto Kick Sudah Aktif")
-		print wait["AutoKick"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+	     if msg.from_ in admin:	        
+	    	wait["Qr"] = False
+                if wait["lang"] == "JP":
+	    	    cl.sendText(msg.to,"Qr Protect Sudah Di Nonaktifkan")                
 
-	    elif msg.text in ["Autokick off"]:
-#	     if msg.from_ in admin:	        
-                wait["AutoKick"][msg.to] = False
-                wait["AutoKickon"] = False
-                cl.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")
-		print wait["AutoKick"]
-#	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	
+	    elif "Autokick on" in msg.text:
+	     if msg.from_ in admin:	 	        
+		     wait["AutoKick"] = True
+                     if wait["lang"] == "JP":
+		         cl.sendText(msg.to,"Auto Kick Sudah Aktif")	     
 
+	    elif "Autokick off" in msg.text:
+	     if msg.from_ in admin:	 	        
+		     wait["AutoKick"] = False
+                     if wait["lang"] == "JP":
+		         cl.sendText(msg.to,"Auto Kick Sudah Di Nonaktifkan")	     
 
-	    elif msg.text in ["Ghost on"]:
-#	     if msg.from_ in admin:	        
-                wait["Ghost"] = True
-                cl.sendText(msg.to,"Ghost Sudah Aktif")
+	    elif "Ghost on" in msg.text:
+	     if msg.from_ in admin:	 	        
+		     wait["Ghost"] = True
+                     if wait["lang"] == "JP":
+		         cl.sendText(msg.to,"Ghost Sudah Aktif")
 #	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")		
+#	        cl.sendText(msg.to,"Khusus Rahmat")		     
 
-	    elif msg.text in ["Ghost off"]:
-#	     if msg.from_ in admin:	        
-                wait["Ghost"] = False
-                cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
+	    elif "Ghost off" in msg.text:
+#	     if msg.from_ in admin:	 	        
+		     wait["Ghost"] = False
+                     if wait["lang"] == "JP":
+		         cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
 #	     else:
-#		    cl.sendText(msg.to,"Khusus Nadya")	     
+#	         cl.sendText(msg.to,"Khusus Rahmat")		     
 
             elif msg.text in ["Allprotect on"]:
-#		if msg.from_ in admin:
-                    wait["AutoCancel"][msg.to] = True
-                    wait["AutoCancelon"] = True
-                    wait["inviteprotect"] = True 
-                    wait["joinkick"] = True 
-                    wait["AutoKick"][msg.to] = True
-                    wait["AutoKickon"] = True
-                    wait["Qr"][msg.to] = True
-                    wait["Qron"] = True
-                    wait["Ghost"] = True     
-                    cl.sendText(msg.to,"All Protect Sudah Aktif Semua")
-		    print wait["AutoCancel"]
-		    print wait["AutoKick"]
-		    print wait["Qr"]
-#		else:
-#		    cl.sendText(msg.to,"Khusus Nadya")
+		if msg.from_ in admin:
+                    wait["AutoCancel"] = True
+                    wait["inviteprotect"] = True                   
+                    wait["AutoKick"] = True
+                    wait["Qr"] = True
+                    wait["Ghost"] = True                     
+                    if wait["lang"] == "JP":
+		        cl.sendText(msg.to,"All Protect Sudah Aktif Semua")
 
             elif msg.text in ["Allprotect off"]:
-#		if msg.from_ in admin:
-                    wait["AutoCancel"][msg.to] = False
-                    wait["AutoCancelon"] = False
-                    wait["inviteprotect"] = False  
-                    wait["joinkick"] = False
-                    wait["AutoKick"][msg.to] = False
-                    wait["AutoKickon"] = False
-                    wait["Qr"][msg.to] = False
-                    wait["Qron"] = False
-                    wait["Ghost"] = False 
-                    cl.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
-		    print wait["AutoCancel"]
-		    print wait["AutoKick"]
-		    print wait["Qr"]
-#		else:                    
-#		else:
-#		    cl.sendText(msg.to,"Khusus Nadya")
+		if msg.from_ in admin:
+                    wait["AutoCancel"] = False
+                    wait["inviteprotect"] = False                    
+                    wait["AutoKick"] = False
+                    wait["Qr"] = False
+                    wait["Ghost"] = False
+		    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"All Protect Sudah Di Nonaktifkan Semua")
 
 
-            elif msg.text in ["K on","Contact on"]:
+            elif msg.text in ["Kontak on","Contact on"]:
                 wait["Contact"] = True
-                cl.sendText(msg.to,"Contact Sudah Aktif")
+		if wait["lang"] == "JP":
+                   cl.sendText(msg.to,"Contact Sudah Aktif")
 
-            elif msg.text in ["K off","Contact off"]:
+            elif msg.text in ["Kontak off","Contact off"]:
                 wait["Contact"] = False
-                cl.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
+		if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
 
             elif msg.text in ["Alwaysread on"]:
                 wait["alwaysRead"] = True
-                cl.sendText(msg.to,"Always Read Sudah Aktif")
+		if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Always Read Sudah Aktif")
 
             elif msg.text in ["Alwaysread off"]:
                 wait["alwaysRead"] = False
-                cl.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
+		if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
 
 
             elif msg.text in ["Sambutan on"]:
@@ -1849,9 +1805,8 @@ def bot(op):
                         cl.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
                 else:
                     wait["Sambutan"] = True
-                    wait["joinkick"] = False
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
+                        cl.sendTex t(msg.to,"Sudah Onヽ(´▽｀)/")
 
             elif msg.text in ["Sambutan off"]:
                 if wait["Sambutan"] == False:
@@ -2963,7 +2918,7 @@ def bot(op):
             elif 'Crash' in msg.text:
               if msg.from_ in Creator:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "NADYA,'"}
+                msg.contentMetadata = {'mid': "RAHMAT,'"}
                 cl.sendMessage(msg)
 
  
@@ -3219,7 +3174,7 @@ def bot(op):
                     text = data[0].get('content').split()
                     data1 = soup.find_all('meta', attrs={'property':'og:image'})
                     text1 = data1[0].get('content').split()
-                    nadya = text1[0].replace("s150x150/","")
+                    rahmat = text1[0].replace("s150x150/","")
                     user = "Name: " + text[-2] + "\n"
                     user1 = "Username: " + text[-1] + "\n"
                     followers = "Followers: " + text[0] + "\n"
@@ -3229,7 +3184,7 @@ def bot(op):
                     detail = "========INSTAGRAM INFO ========\n"
                     details = "\n========INSTAGRAM INFO ========"
                     cl.sendText(msg.to, detail + user + user1 + followers + following + post + link + details)
-                    cl.sendImageWithURL(msg.to, nadya)
+                    cl.sendImageWithURL(msg.to, rahmat)
                 except Exception as njer:
                 	cl.sendText(msg.to, str(njer))
                 	
